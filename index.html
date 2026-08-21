@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Build an integrated SenseCAP system with compact weather stations, industrial sensors and data loggers for weather, soil, water and environmental data.">
+  <meta name="keywords" content="SenseCAP industrial weather station, compact weather station, 5-in-1 weather station, 7-in-1 weather station, radar rain weather station, radar rain gauge, radar rainfall sensor, radar precipitation sensor, radar rainfall monitoring, RS485 weather station, Modbus weather sensor, weather data logger, 4G data logger, LoRaWAN data logger, industrial environmental sensor, soil moisture EC sensor, agricultural weather monitoring, hydrological monitoring">
+  <title>All-in-one Compact Weather Station and Sensors | Seeed Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+      <header class="site-header" data-header>
+        <a class="brand" href="#top" aria-label="SenseCAP environmental monitoring home">
+          <img src="sensecap-logo.svg" alt="SenseCAP Logo" class="brand-logo" />
+        </a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="https://www.aliexpress.com/store/1104653196" target="_blank" rel="noreferrer">Aliexpress Store</a>
+          <a href="https://www.seeed.cc/selection/weather-station" target="_blank" rel="noreferrer">Seeed Solution</a>
+          <a href="https://seeedstudio.en.alibaba.com/productgrouplist-956236838/Weather_Station.html?spm=a2700.shop_index.74.6.4516fcd8IGL74E" target="_blank" rel="noreferrer">ALIBABA</a>
+          <a href="https://wiki.seeedstudio.com/SenseCAP-ONE-Compact-Weather-Station-Introduction/" target="_blank" rel="noreferrer">wiki</a>
+          <a href="https://www.linkedin.com/showcase/seeed-weather-station" target="_blank" rel="noreferrer">linkedin</a>
+        </nav>
+        <a class="header-cta" href="mailto:sensecap@seeed.cc">
+          Contact us <span aria-hidden="true">↗</span>
+        </a>
+      </header>
+
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="hero-poster.jpg" aria-hidden="true">
+          <source src="hero-bg.mp4" type="video/mp4" />
+        </video>
+
+        <div class="hero-content shell">
+          <span class="hero-tag">Professional-Grade</span>
+          <h1 id="hero-title">
+            <span class="hero-line-one">Weather &amp; Environmental</span><br>
+            <span class="hero-line-two">Monitoring</span>
+          </h1>
+          <p class="hero-summary">
+            Compact all-in-one weather stations, rugged sensors, and industrial interfaces for agriculture, hydrology, and urban applications.
+          </p>
+        </div>
+      </section>
+
+      <section class="stats-band" aria-label="SenseCAP global reach">
+        <div class="shell stats-grid">
+          <div class="stat-item">
+            <strong>200+</strong>
+            <span>Partners Worldwide</span>
+          </div>
+          <div class="stat-item">
+            <strong>120+</strong>
+            <span>Countries and Regions Covered</span>
+          </div>
+          <div class="stat-item">
+            <strong>1000+</strong>
+            <span>Trusted Customers</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-mosaic" id="capabilities" aria-label="SenseCAP capabilities">
+        <article class="feature-card feature-accuracy" style="--feature-image: url('https://i.ibb.co/KpYSqVtq/7bbb34bf-2aac-424f-a7cd-ba671a1857da.jpg')">
+          <div class="feature-copy feature-copy-bottom">
+            <span class="feature-number">01</span>
+            <h3>Precision Tested, Performance Proven</h3>
+            <p>Individually calibrated and rigorously tested, with a ventilated radiation shield and precision components to deliver accurate, consistent measurements in real-world conditions.</p>
+          </div>
+        </article>
+
+        <article class="feature-card feature-compact" style="--feature-image: url('https://i.ibb.co/3YTvxF2b/We-Chat-Work-Screenshot-dba80523-8276-4075-9cb2-229a261d60f6.png')">
+          <div class="feature-copy feature-copy-top">
+            <span class="feature-number">02</span>
+            <h3>More Measurements, Less Infrastructure</h3>
+            <p>One compact station seamlessly consolidates multiple measurements into a single system, significantly simplifying deployment and maintenance.</p>
+          </div>
+        </article>
+
+        <article class="feature-card feature-applications" style="--feature-image: url('https://i.ibb.co/7NzxNCrc/20230404172019.jpg')">
+          <div class="feature-copy feature-copy-bottom">
+            <span class="feature-number">03</span>
+            <h3>Built for the Places Weather Matters</h3>
+            <ul class="application-list">
+              <li>Weather Monitoring</li>
+              <li>Climate Research</li>
+              <li>Renewable Energy</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature-card feature-probes" style="--feature-image: url('https://i.ibb.co/hFZPJZxz/3.jpg')">
+          <div class="feature-copy feature-copy-bottom feature-copy-wide">
+            <span class="feature-number">04</span>
+            <h3>Measure Where Conditions Actually Change</h3>
+            <p>Application-specific probes extend monitoring into soil, substrate, water, and exposed infrastructure, combining precise placement, industrial protection, and RS485 or LoRaWAN connectivity.</p>
+          </div>
+        </article>
+
+        <article class="feature-card feature-connected" style="--feature-image: url('5.jpeg')">
+          <div class="feature-copy feature-copy-top feature-copy-wide">
+            <span class="feature-number">05</span>
+            <h3>Keep Every Sensor Connected</h3>
+            <p>Connect diverse Modbus sensors through LoRaWAN or 4G, while local caching, backup power, GPS, and remote updates preserve data continuity across unattended sites.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="product-finder" id="selector" aria-label="Product finder">
+        <div class="shell">
+          <div class="selector-layout">
+            <aside class="filter-panel" aria-label="Product filters">
+              <div class="filter-heading">
+                <div>
+                  <span class="filter-kicker">Instrument selector</span>
+                  <h3>Refine the portfolio</h3>
+                </div>
+                <button class="text-button" type="button" data-clear-filters>Clear</button>
+              </div>
+
+              <fieldset class="filter-group">
+                <legend>Product type</legend>
+                <label class="filter-option"><input type="checkbox" name="product-type" value="weather" /><span>Weather Stations</span><small>10</small></label>
+                <label class="filter-option"><input type="checkbox" name="product-type" value="sensor" /><span>Sensor Probes</span><small>38</small></label>
+                <label class="filter-option"><input type="checkbox" name="product-type" value="lorawan" /><span>LoRaWAN Sensors</span><small>8</small></label>
+                <label class="filter-option"><input type="checkbox" name="product-type" value="support" /><span>Data Logger and Accessories</span><small>10</small></label>
+              </fieldset>
+
+              <fieldset class="filter-group parameter-group">
+                <legend>Parameters</legend>
+                <div class="parameter-options" data-parameter-options></div>
+              </fieldset>
+            </aside>
+
+            <div class="product-results">
+              <div class="results-toolbar">
+                <p data-results-summary aria-live="polite">Loading portfolio...</p>
+              </div>
+              <div class="product-groups" data-product-groups></div>
+              <noscript>Please enable JavaScript to use the product selector.</noscript>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="editorial-section case-section" id="cases" aria-labelledby="cases-title">
+        <div class="shell">
+          <div class="editorial-heading">
+            <div>
+              <h2 id="cases-title">Monitoring systems proven beyond the lab.</h2>
+            </div>
+            <div class="carousel-controls" aria-label="Success case carousel controls">
+              <button type="button" aria-label="Previous success cases" data-scroll="case-track" data-direction="-1"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+              <button type="button" aria-label="Next success cases" data-scroll="case-track" data-direction="1"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+            </div>
+          </div>
+          <div class="editorial-track" id="case-track" data-case-track></div>
+        </div>
+      </section>
+
+      <section class="editorial-section insight-section" id="insights" aria-labelledby="insights-title">
+        <div class="shell">
+          <div class="editorial-heading">
+            <div>
+              <h2 id="insights-title">Engineering insight for better deployments.</h2>
+            </div>
+            <div class="carousel-controls" aria-label="Blog carousel controls">
+              <button type="button" aria-label="Previous articles" data-scroll="insight-track" data-direction="-1"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+              <button type="button" aria-label="Next articles" data-scroll="insight-track" data-direction="1"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+            </div>
+          </div>
+          <div class="editorial-track" id="insight-track" data-blog-track></div>
+        </div>
+      </section>
+
+      <section class="contact-sec" id="contact-sec" aria-label="Contact Us" data-screen-label="Contact Us">
+        <canvas id="contact-neural-canvas" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; opacity: 0.65;"></canvas>
+        <div class="contact-inner">
+          <div class="contact-head-wrap" style="text-align: center; margin-bottom: 48px;">
+            <h2 class="contact-title">Contact Us</h2>
+            <p class="contact-sub">We Are Glad to Be Your Hardware Partner !</p>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <!-- Row 1: Reason for Contact -->
+            <div class="cf-row cf-full">
+              <div class="cf-field cf-select">
+                <select name="reason" required>
+                  <option value="" disabled selected hidden></option>
+                  <option value="Product Inquiry">Product Inquiry</option>
+                  <option value="Technical Support">Technical Support</option>
+                  <option value="Bulk / OEM Order">Bulk / OEM Order</option>
+                  <option value="Partnership">Partnership</option>
+                  <option value="Other">Other</option>
+                </select>
+                <label class="cf-label">Reason for Contact<span class="req">*</span></label>
+              </div>
+            </div>
+
+            <!-- Row 2: Name / Email -->
+            <div class="cf-row cf-two">
+              <div class="cf-field">
+                <input type="text" name="name" placeholder=" " required />
+                <label class="cf-label">Your Name<span class="req">*</span></label>
+              </div>
+              <div class="cf-field">
+                <input type="email" name="email" placeholder=" " required />
+                <label class="cf-label">Work Email<span class="req">*</span></label>
+              </div>
+            </div>
+
+            <!-- Row 3: Position / Phone -->
+            <div class="cf-row cf-two">
+              <div class="cf-field">
+                <input type="text" name="position" placeholder=" " />
+                <label class="cf-label">Your Position</label>
+              </div>
+              <div class="cf-field">
+                <input type="tel" name="phone" placeholder=" " />
+                <label class="cf-label">Phone Number</label>
+              </div>
+            </div>
+
+            <!-- Row 4: Country / Company -->
+            <div class="cf-row cf-two">
+              <div class="cf-field cf-select">
+                <select name="country" required>
+                  <option value="" disabled selected hidden></option>
+                  <option value="China">China</option>
+                  <option value="United States">United States</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Japan">Japan</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="India">India</option>
+                  <option value="South Korea">South Korea</option>
+                  <option value="France">France</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Other">Other</option>
+                </select>
+                <label class="cf-label">Country<span class="req">*</span></label>
+              </div>
+              <div class="cf-field">
+                <input type="text" name="company" placeholder=" " required />
+                <label class="cf-label">Company Name<span class="req">*</span></label>
+              </div>
+            </div>
+
+            <!-- Row 5: No. of employees -->
+            <div class="cf-row cf-full">
+              <div class="cf-field cf-select">
+                <select name="employees" required>
+                  <option value="" disabled selected hidden></option>
+                  <option value="1–10">1–10</option>
+                  <option value="11–50">11–50</option>
+                  <option value="51–200">51–200</option>
+                  <option value="201–500">201–500</option>
+                  <option value="501–1000">501–1000</option>
+                  <option value="1000+">1000+</option>
+                </select>
+                <label class="cf-label">No. of employees<span class="req">*</span></label>
+              </div>
+            </div>
+
+            <!-- Row 6: Business Type -->
+            <div class="cf-row cf-full">
+              <div class="cf-field cf-select">
+                <select name="businessType" required>
+                  <option value="" disabled selected hidden></option>
+                  <option value="Manufacturer / OEM">Manufacturer / OEM</option>
+                  <option value="System Integrator">System Integrator</option>
+                  <option value="Distributor / Reseller">Distributor / Reseller</option>
+                  <option value="Research & Education">Research &amp; Education</option>
+                  <option value="Startup / Individual">Startup / Individual</option>
+                  <option value="Other">Other</option>
+                </select>
+                <label class="cf-label">Business Type<span class="req">*</span></label>
+              </div>
+            </div>
+
+            <!-- Row 7: Website -->
+            <div class="cf-row cf-full">
+              <div class="cf-field">
+                <input type="url" name="website" placeholder=" " />
+                <label class="cf-label">Company Website</label>
+              </div>
+            </div>
+
+            <!-- Submit -->
+            <div class="cf-foot">
+              <button type="submit" class="cf-next">Submit &rsaquo;</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="shell footer-layout">
+          <div class="footer-brand">
+            <img src="sensecap-logo.svg" alt="SenseCAP Logo" class="footer-logo" />
+            <p>Environmental intelligence built for the field.</p>
+          </div>
+          <nav aria-label="Footer navigation">
+            <a href="https://www.seeedstudio.com/Weather-Station-c-2538.html" target="_blank" rel="noreferrer">Shop weather monitoring</a>
+            <a href="https://www.linkedin.com/showcase/seeed-weather-station" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://www.seeed.cc/solutions/environment-monitoring" target="_blank" rel="noreferrer">Solutions</a>
+            <a href="mailto:sensecap@seeed.cc">sensecap@seeed.cc</a>
+          </nav>
+        </div>
+        <div class="shell footer-bottom"><span>Seeed Studio SenseCAP</span><a href="#top">Back to top ↑</a></div>
+      </footer>
+      <script src="app.js" defer></script>
+</main>
+</body>
+</html>
