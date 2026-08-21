@@ -1210,7 +1210,6 @@ window.SENSECAP_EDITORIAL = {
 
     var ctx = canvas.getContext("2d");
     var width = 0, height = 0;
-    var mouse = { x: null, y: null, radius: 180 };
 
     function resize() {
       var rect = canvas.getBoundingClientRect();
@@ -1219,23 +1218,6 @@ window.SENSECAP_EDITORIAL = {
     }
     resize();
     window.addEventListener("resize", resize, { passive: true });
-
-    var contactSec = document.getElementById("contact-sec");
-    if (contactSec) {
-      contactSec.addEventListener("mousemove", function (e) {
-        var rect = contactSec.getBoundingClientRect();
-        mouse.x = e.clientX - rect.left;
-        mouse.y = e.clientY - rect.top;
-        var x = (mouse.x / rect.width) * 100;
-        var y = (mouse.y / rect.height) * 100;
-        contactSec.style.setProperty("--contact-cx", x.toFixed(1) + "%");
-        contactSec.style.setProperty("--contact-cy", y.toFixed(1) + "%");
-      });
-      contactSec.addEventListener("mouseleave", function () {
-        mouse.x = null;
-        mouse.y = null;
-      });
-    }
 
     var particles = [];
     var particleCount = 45;
@@ -1255,18 +1237,6 @@ window.SENSECAP_EDITORIAL = {
 
       if (this.x < 0 || this.x > width) this.vx *= -1;
       if (this.y < 0 || this.y > height) this.vy *= -1;
-
-      if (mouse.x !== null && mouse.y !== null) {
-        var dx = mouse.x - this.x;
-        var dy = mouse.y - this.y;
-        var dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < mouse.radius) {
-          var force = (mouse.radius - dist) / mouse.radius;
-          var angle = Math.atan2(dy, dx);
-          this.x -= Math.cos(angle) * force * 1.5;
-          this.y -= Math.sin(angle) * force * 1.5;
-        }
-      }
     };
 
     Particle.prototype.draw = function () {
