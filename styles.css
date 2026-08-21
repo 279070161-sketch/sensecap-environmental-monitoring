@@ -275,26 +275,11 @@ a { color: inherit; text-decoration: none; }
 /* ===========================================================================
    CONTACT US FORM (Redesigned matching main landing page UI theme)
    =========================================================================== */
-@keyframes contactGlowPulse {
-  0% {
-    opacity: 0.88;
-    filter: brightness(1);
-  }
-  50% {
-    opacity: 1;
-    filter: brightness(1.12);
-  }
-  100% {
-    opacity: 0.88;
-    filter: brightness(1);
-  }
-}
-
 .contact-sec {
-  background: radial-gradient(circle at 50% 30%, rgba(141, 194, 31, 0.14) 0%, transparent 60%),
-              radial-gradient(circle at 80% 80%, rgba(141, 194, 31, 0.08) 0%, transparent 50%),
+  background: radial-gradient(circle at 50% 30%, rgba(141, 194, 31, 0.12) 0%, transparent 60%),
+              radial-gradient(circle at 80% 80%, rgba(141, 194, 31, 0.06) 0%, transparent 50%),
               linear-gradient(180deg, #071722 0%, #0c202e 100%) !important;
-  animation: contactGlowPulse 6s ease-in-out infinite alternate !important;
+  animation: none !important;
   padding: 100px 24px 110px !important;
   color: #ffffff !important;
   position: relative !important;
