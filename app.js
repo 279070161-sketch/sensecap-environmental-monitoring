@@ -958,9 +958,9 @@ window.SENSECAP_EDITORIAL = {
     lorawan: { title: "LoRaWAN Sensors", eyebrow: "Wireless sensing nodes" },
     support: { title: "Data Logger and Accessories", eyebrow: "Connectivity and deployment essentials" }
   };
-  var pageSize = 12;
+  var pageSize = 10;
   var state = {
-    selectedType: "all",
+    selectedTypes: new Set(),
     parameters: new Set(),
     pages: { weather: 1, sensor: 1, lorawan: 1, support: 1 }
   };
@@ -1013,8 +1013,8 @@ window.SENSECAP_EDITORIAL = {
   }
 
   function effectiveTypes() {
-    if (!state.selectedType || state.selectedType === "all") return allTypes;
-    return [state.selectedType];
+    if (state.selectedTypes.size === 0) return allTypes;
+    return Array.from(state.selectedTypes);
   }
 
   function matchesParameters(product) {
@@ -1112,7 +1112,9 @@ window.SENSECAP_EDITORIAL = {
   function renderProducts() {
     if (!groupsRoot || !summaryRoot) return;
     var activeTypes = effectiveTypes();
-    var isFiltered = (state.selectedType && state.selectedType !== "all") || state.parameters.size > 0;
+    var isSingleType = activeTypes.length === 1;
+    var hasParams = state.parameters.size > 0;
+    var isGrid = isSingleType && !hasParams;
     var total = 0;
 
     groupsRoot.innerHTML = activeTypes.map(function (type) {
@@ -1124,19 +1126,17 @@ window.SENSECAP_EDITORIAL = {
       }), type);
       total += matching.length;
       var trackId = "product-track-" + type;
-      var isGrid = isFiltered;
-      var visibleProducts = matching;
 
       return '<section class="product-group" data-type="' + type + '">' +
         '<div class="product-group-heading">' +
           '<div><span>' + escapeHtml(typeMeta[type].eyebrow) + '</span><h3>' + escapeHtml(typeMeta[type].title) + ' <small>' + matching.length + '</small></h3></div>' +
           (!isGrid && matching.length > 3 ? '<div class="mini-controls"><button type="button" aria-label="Previous ' + escapeHtml(typeMeta[type].title) + '" data-scroll="' + trackId + '" data-direction="-1"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg></button><button type="button" aria-label="Next ' + escapeHtml(typeMeta[type].title) + '" data-scroll="' + trackId + '" data-direction="1"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button></div>' : '') +
         '</div>' +
-        (matching.length ? '<div class="product-track' + (isGrid ? ' product-grid' : '') + '" id="' + trackId + '">' + visibleProducts.map(productCard).join("") + '</div>' : emptyState(type)) +
+        (matching.length ? '<div class="product-track' + (isGrid ? ' product-grid' : '') + '" id="' + trackId + '">' + matching.map(productCard).join("") + '</div>' : emptyState(type)) +
       '</section>';
     }).join("");
 
-    var parameterPhrase = state.parameters.size ? " matching all " + state.parameters.size + " selected parameters" : " across the complete parameter set";
+    var parameterPhrase = hasParams ? " matching all " + state.parameters.size + " selected parameters" : " across the complete parameter set";
     summaryRoot.textContent = total + " products" + parameterPhrase;
     bindScrollControls(groupsRoot);
   }
@@ -1202,21 +1202,22 @@ window.SENSECAP_EDITORIAL = {
   typeInputs.forEach(function (input) {
     input.addEventListener("change", function () {
       if (input.checked) {
-        state.selectedType = input.value;
-        resetPages();
-        renderProducts();
+        state.selectedTypes.add(input.value);
+      } else {
+        state.selectedTypes.delete(input.value);
       }
+      resetPages();
+      renderProducts();
     });
   });
 
   if (clearButton) {
     clearButton.addEventListener("click", function () {
-      state.selectedType = "all";
+      state.selectedTypes = new Set(allTypes);
       state.parameters.clear();
       resetPages();
-      var allRadio = document.querySelector('input[name="product-type"][value="all"]');
-      if (allRadio) allRadio.checked = true;
-      document.querySelectorAll('.filter-panel input[type="checkbox"]').forEach(function (input) { input.checked = false; });
+      typeInputs.forEach(function (input) { input.checked = true; });
+      document.querySelectorAll('.filter-panel input[name="parameter"]').forEach(function (input) { input.checked = false; });
       renderProducts();
     });
   }
