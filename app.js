@@ -132,7 +132,7 @@ window.SENSECAP_PRODUCTS = [
       "Humidity",
       "Air Pressure"
     ],
-    "url": "https://www.seeedstudio.com/RS485-Air-Temperature-Humidity-and-Pressure-Sensor-p-580",
+    "url": "https://www.seeedstudio.com/RS485-Air-Temperature-Humidity-and-Pressure-Sensor-p-5801.html",
     "bestSellerRank": 11,
     "sourceOrder": 12,
     "image": "images/products/101991101.jpg"
@@ -439,10 +439,10 @@ window.SENSECAP_PRODUCTS = [
       "Humidity",
       "Gas"
     ],
-    "url": "https://www.seeedstudio.com/RS485-H2S-Sensor-Connector-p-5114.htm",
+    "url": "https://www.seeedstudio.com/RS485-H2S-Sensor-Connector-p-5114.html",
     "bestSellerRank": null,
     "sourceOrder": 37,
-    "image": "images/products/101990863.png"
+    "image": "images/products/101990863.jpg"
   },
   {
     "sku": "101991041",
@@ -720,10 +720,10 @@ window.SENSECAP_PRODUCTS = [
     "name": "Sensor Hub Industrial-grade 4G Data Logger with MODBUS-RTU RS485 protocol - DC Only",
     "type": "logger",
     "parameters": [],
-    "url": "https://www.seeedstudio.com/4G-Sensor-Hub-Global-DC-Only-p-4881.ht",
+    "url": "https://www.seeedstudio.com/4G-Sensor-Hub-Global-DC-Only-p-4881.html",
     "bestSellerRank": null,
     "sourceOrder": 61,
-    "image": "images/products/114992171.png"
+    "image": "images/products/114992171.jpg"
   },
   {
     "sku": "100035616",
@@ -833,7 +833,7 @@ window.SENSECAP_PRODUCTS = [
     "name": "SenseCAP S2110 LoRaWAN RS485 Sensor Controller - Connect Up to 8 Sensors",
     "type": "lorawan",
     "parameters": [],
-    "url": "https://www.seeedstudio.com/SenseCAP-S2110-LoRaWAN-RS485-Sensor-Controller-p-5437.html",
+    "url": "https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html",
     "bestSellerRank": null,
     "sourceOrder": 70,
     "image": "images/products/114993003.jpg"
@@ -845,7 +845,7 @@ window.SENSECAP_EDITORIAL = {
     {
       title: "Ready to Deploy Solution: SenseCAP and Machinechat JEDI One Optimize Greenhouse Operations",
       preview: "SenseCAP LoRaWAN sensors and gateways measure and transfer temperature, humidity, moisture, and light data while Machinechat JEDI One accelerates secure environmental monitoring deployment.",
-      image: "https://www.seeed.cc/_next/image?q=90&url=https%3A%2F%2Fwww.seeedstudio.com%2Fblog%2Fwp-content%2Fuploads%2F2021%2F09%2FSeeed-x-machinchat-x-digi-key.jpg&w=640",
+      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2021/09/Seeed-x-machinchat-x-digi-key.jpg",
       url: "https://www.seeed.cc/post/ready-to-deploy-solution-seeeds-sensecap-and-machinechats-jedi-one-together-optimizes-greenhouse-operations",
       tag: "Greenhouse"
     },
@@ -866,10 +866,11 @@ window.SENSECAP_EDITORIAL = {
     {
       title: "SenseCAP LoRaWAN Empowers Precision Agriculture on an Outdoor Triticale Farm",
       preview: "A distributed sensor network captures real-time field and microclimate conditions, helping growers understand crop requirements and make more informed agricultural management decisions.",
-      image: "https://www.seeed.cc/_next/image?q=90&url=https%3A%2F%2Fblog.seeedstudio.com%2Fwp-content%2Fuploads%2F2019%2F11%2F_%E5%AE%9A%E5%B7%9E-1030x516.png&w=3840",
+      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2019/11/%E5%AE%9A%E5%B7%9E-1030x516.png",
       url: "https://www.seeed.cc/post/sensecap-lorawan-deployed-in-outdoor-triticale-farm-empowering-precision-agriculture-in-dingzhou-hebei-province-northern-china",
       tag: "Field Monitoring"
     },
+
     {
       title: "Rice Pest and Disease Monitoring for a More Predictable Harvest",
       preview: "SenseCAP weather stations, water sensors, a 4G Sensor Hub, and software monitoring combine meteorological and field data to support earlier rice pest warnings.",
@@ -880,7 +881,7 @@ window.SENSECAP_EDITORIAL = {
     {
       title: "500+ SenseCAP Devices Help Cagliari Monitor the Urban Heat Island",
       preview: "More than 500 SenseCAP devices across 300 sites provide local environmental data for urban planning, academic research, and targeted heat island mitigation actions.",
-      image: "https://www.seeed.cc/_next/image?q=90&url=https%3A%2F%2Fwww.seeedstudio.com%2Fblog%2Fwp-content%2Fuploads%2F2023%2F04%2FSenseCAP-Devices-Deployed-on-Light-Pole.png&w=1920",
+      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2023/04/SenseCAP-Devices-Deployed-on-Light-Pole.png",
       url: "https://www.seeed.cc/post/smart-city-500-sensecap-lorawan-devices-deployed-to-mitigate-urban-heat-island-in-cagliari-italy",
       tag: "Smart City"
     },
@@ -894,7 +895,7 @@ window.SENSECAP_EDITORIAL = {
     {
       title: "Nibiaa Brings LoRaWAN Monitoring and Data Intelligence to Tea Estates",
       preview: "Nibiaa connects agricultural research with practical technology, using distributed environmental monitoring to support data-driven decisions and regenerative agriculture across tea estates.",
-      image: "https://www.seeed.cc/_next/image?q=90&url=https%3A%2F%2Fwww.seeedstudio.com%2Fblog%2Fwp-content%2Fuploads%2F2022%2F09%2Fimage-01-1030x422.png&w=3840",
+      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2022/09/image-01-1030x422.png",
       url: "https://www.seeed.cc/post/new-vision-of-system-integrator-nibiaa-brings-lorawan-iot-solution-to-precision-agriculture",
       tag: "System Integration"
     }
@@ -931,7 +932,7 @@ window.SENSECAP_EDITORIAL = {
     {
       title: "Smart City Environmental Monitoring Across More Than 300 Sites",
       preview: "A city-scale network combines weather sensors, LoRaWAN data interfaces, connectivity, and analytical software to reveal localized temperature, humidity, air quality, wind, and rainfall conditions.",
-      image: "https://www.seeed.cc/_next/image?q=90&url=https%3A%2F%2Fwww.seeedstudio.com%2Fblog%2Fwp-content%2Fuploads%2F2023%2F04%2FSenseCAP-Devices-Deployed-on-Light-Pole.png&w=1920",
+      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2023/04/SenseCAP-Devices-Deployed-on-Light-Pole.png",
       url: "https://www.seeed.cc/post/smart-city-500-sensecap-lorawan-devices-deployed-to-mitigate-urban-heat-island-in-cagliari-italy",
       tag: "Deployment"
     },
@@ -959,7 +960,7 @@ window.SENSECAP_EDITORIAL = {
   };
   var pageSize = 12;
   var state = {
-    types: new Set(),
+    selectedType: "all",
     parameters: new Set(),
     pages: { weather: 1, sensor: 1, lorawan: 1, support: 1 }
   };
@@ -1012,8 +1013,8 @@ window.SENSECAP_EDITORIAL = {
   }
 
   function effectiveTypes() {
-    if (state.types.size === 0 || state.types.size === allTypes.length) return allTypes;
-    return allTypes.filter(function (type) { return state.types.has(type); });
+    if (!state.selectedType || state.selectedType === "all") return allTypes;
+    return [state.selectedType];
   }
 
   function matchesParameters(product) {
@@ -1064,13 +1065,13 @@ window.SENSECAP_EDITORIAL = {
     var title = productTitle(product.name);
     var imgSrc = getProductImage(product);
 
-    return '<article class="product-card">' +
+    return '<a class="product-card" href="' + escapeHtml(product.url) + '" target="_blank" rel="noreferrer">' +
       '<div class="product-visual" aria-hidden="true"><img src="' + escapeHtml(imgSrc) + '" alt="' + escapeHtml(title.title) + '" loading="lazy"></div>' +
       '<div class="product-card-body">' +
         '<h4>' + escapeHtml(title.title) + '</h4>' +
-        '<a href="' + escapeHtml(product.url) + '" target="_blank" rel="noreferrer">Explore Specs <span aria-hidden="true">↗</span></a>' +
+        '<div class="product-card-action">Explore Specs <span aria-hidden="true">↗</span></div>' +
       '</div>' +
-    '</article>';
+    '</a>';
   }
 
   function emptyState(type) {
@@ -1111,7 +1112,7 @@ window.SENSECAP_EDITORIAL = {
   function renderProducts() {
     if (!groupsRoot || !summaryRoot) return;
     var activeTypes = effectiveTypes();
-    var singleTypeView = state.types.size === 1;
+    var isFiltered = (state.selectedType && state.selectedType !== "all") || state.parameters.size > 0;
     var total = 0;
 
     groupsRoot.innerHTML = activeTypes.map(function (type) {
@@ -1123,25 +1124,21 @@ window.SENSECAP_EDITORIAL = {
       }), type);
       total += matching.length;
       var trackId = "product-track-" + type;
-      var pageCount = Math.max(1, Math.ceil(matching.length / pageSize));
-      var currentPage = Math.min(state.pages[type] || 1, pageCount);
-      state.pages[type] = currentPage;
-      var visibleProducts = singleTypeView
-        ? matching.slice((currentPage - 1) * pageSize, currentPage * pageSize)
-        : matching;
+      var isGrid = isFiltered;
+      var visibleProducts = matching;
+
       return '<section class="product-group" data-type="' + type + '">' +
         '<div class="product-group-heading">' +
           '<div><span>' + escapeHtml(typeMeta[type].eyebrow) + '</span><h3>' + escapeHtml(typeMeta[type].title) + ' <small>' + matching.length + '</small></h3></div>' +
-          (!singleTypeView && matching.length > 3 ? '<div class="mini-controls"><button type="button" aria-label="Previous ' + escapeHtml(typeMeta[type].title) + '" data-scroll="' + trackId + '" data-direction="-1"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg></button><button type="button" aria-label="Next ' + escapeHtml(typeMeta[type].title) + '" data-scroll="' + trackId + '" data-direction="1"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button></div>' : '') +
+          (!isGrid && matching.length > 3 ? '<div class="mini-controls"><button type="button" aria-label="Previous ' + escapeHtml(typeMeta[type].title) + '" data-scroll="' + trackId + '" data-direction="-1"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg></button><button type="button" aria-label="Next ' + escapeHtml(typeMeta[type].title) + '" data-scroll="' + trackId + '" data-direction="1"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button></div>' : '') +
         '</div>' +
-        (matching.length ? '<div class="product-track' + (singleTypeView ? ' product-grid' : '') + '" id="' + trackId + '">' + visibleProducts.map(productCard).join("") + '</div>' + (singleTypeView ? pagination(type, currentPage, pageCount) : '') : emptyState(type)) +
+        (matching.length ? '<div class="product-track' + (isGrid ? ' product-grid' : '') + '" id="' + trackId + '">' + visibleProducts.map(productCard).join("") + '</div>' : emptyState(type)) +
       '</section>';
     }).join("");
 
     var parameterPhrase = state.parameters.size ? " matching all " + state.parameters.size + " selected parameters" : " across the complete parameter set";
     summaryRoot.textContent = total + " products" + parameterPhrase;
     bindScrollControls(groupsRoot);
-    bindPagination(groupsRoot);
   }
 
   function editorialCard(item) {
@@ -1159,11 +1156,41 @@ window.SENSECAP_EDITORIAL = {
   }
 
   function bindScrollControls(root) {
+    // Update button visibility based on current scroll position of a track
+    function updateCarouselBtns(trackId) {
+      var track = document.getElementById(trackId);
+      if (!track) return;
+      var atStart = track.scrollLeft <= 2;
+      var atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+      (root || document).querySelectorAll('[data-scroll="' + trackId + '"]').forEach(function (btn) {
+        var dir = Number(btn.dataset.direction);
+        if (dir === -1) {
+          // prev button
+          atStart ? btn.classList.add('ctrl-hidden') : btn.classList.remove('ctrl-hidden');
+          btn.setAttribute('aria-disabled', atStart ? 'true' : 'false');
+        } else if (dir === 1) {
+          // next button
+          atEnd ? btn.classList.add('ctrl-hidden') : btn.classList.remove('ctrl-hidden');
+          btn.setAttribute('aria-disabled', atEnd ? 'true' : 'false');
+        }
+      });
+    }
+
     (root || document).querySelectorAll("[data-scroll]").forEach(function (button) {
       if (button.dataset.bound === "true") return;
       button.dataset.bound = "true";
+      var trackId = button.dataset.scroll;
+
+      // Bind the track's scroll event once to update button states
+      var track = document.getElementById(trackId);
+      if (track && !track.dataset.ctrlBound) {
+        track.dataset.ctrlBound = "true";
+        track.addEventListener("scroll", function () { updateCarouselBtns(trackId); }, { passive: true });
+        // Run once immediately after content might have loaded
+        setTimeout(function () { updateCarouselBtns(trackId); }, 100);
+      }
+
       button.addEventListener("click", function () {
-        var track = document.getElementById(button.dataset.scroll);
         if (!track) return;
         var direction = Number(button.dataset.direction) || 1;
         track.scrollBy({ left: direction * Math.max(320, track.clientWidth * 0.82), behavior: "smooth" });
@@ -1171,20 +1198,24 @@ window.SENSECAP_EDITORIAL = {
     });
   }
 
+
   typeInputs.forEach(function (input) {
     input.addEventListener("change", function () {
-      if (input.checked) state.types.add(input.value);
-      else state.types.delete(input.value);
-      resetPages();
-      renderProducts();
+      if (input.checked) {
+        state.selectedType = input.value;
+        resetPages();
+        renderProducts();
+      }
     });
   });
 
   if (clearButton) {
     clearButton.addEventListener("click", function () {
-      state.types.clear();
+      state.selectedType = "all";
       state.parameters.clear();
       resetPages();
+      var allRadio = document.querySelector('input[name="product-type"][value="all"]');
+      if (allRadio) allRadio.checked = true;
       document.querySelectorAll('.filter-panel input[type="checkbox"]').forEach(function (input) { input.checked = false; });
       renderProducts();
     });
@@ -1291,6 +1322,22 @@ window.SENSECAP_EDITORIAL = {
     animate();
   }
 
+  function initDeploymentsAccordion() {
+    var cards = document.querySelectorAll(".deployment-accordion-card");
+    if (!cards.length) return;
+
+    cards.forEach(function (card) {
+      card.addEventListener("mouseenter", function () {
+        cards.forEach(function (c) { c.classList.remove("active"); });
+        card.classList.add("active");
+      });
+      card.addEventListener("click", function () {
+        cards.forEach(function (c) { c.classList.remove("active"); });
+        card.classList.add("active");
+      });
+    });
+  }
+
   function bindContactForm() {
     setupContactNeuralCanvas();
 
@@ -1343,10 +1390,88 @@ window.SENSECAP_EDITORIAL = {
     });
   }
 
+  window.playSenseCraftVideo = function () {
+    var poster = document.getElementById("scVideoPoster");
+    var wrap = document.getElementById("scIframeWrap");
+    var iframe = document.getElementById("scVideoIframe");
+    if (poster && wrap && iframe) {
+      var dataSrc = iframe.getAttribute("data-src");
+      if (dataSrc) {
+        iframe.src = dataSrc;
+      }
+      poster.style.display = "none";
+      wrap.style.display = "block";
+      wrap.style.width = "100%";
+      wrap.style.height = "100%";
+      wrap.style.position = "absolute";
+      wrap.style.inset = "0";
+    }
+  };
+
   renderParameters();
   renderProducts();
   renderEditorial();
   bindScrollControls(document);
+  // After editorial cards are rendered, re-trigger scroll state check on each track
+  setTimeout(function () {
+    ['case-track', 'insight-track'].forEach(function (id) {
+      var track = document.getElementById(id);
+      if (track) track.dispatchEvent(new Event('scroll'));
+    });
+  }, 600);
   bindHeaderScroll();
   bindContactForm();
+  initDeploymentsAccordion();
+
+  // Fit dual images: compute height H so both images together exactly fill column width
+  // H × (ratio1 + ratio2) + gap = wrapWidth  =>  H = (wrapWidth - gap) / (ratio1 + ratio2)
+  function fitDualImages() {
+    var wrap = document.querySelector('.sensecraft-dual-image-wrap');
+    if (!wrap) return;
+    var imgs = Array.prototype.slice.call(wrap.querySelectorAll('img'));
+    if (imgs.length < 2) return;
+
+    function compute() {
+      for (var i = 0; i < imgs.length; i++) {
+        if (!imgs[i].naturalWidth) return; // not loaded yet
+      }
+      var wrapWidth = wrap.clientWidth;
+      if (!wrapWidth) return;
+
+      var gap = 16; // must match CSS gap
+      var totalRatio = imgs.reduce(function (sum, img) {
+        return sum + img.naturalWidth / img.naturalHeight;
+      }, 0);
+
+      var H = (wrapWidth - gap) / totalRatio;
+      H = Math.max(160, Math.min(480, H)); // min 160px, max 480px
+
+      imgs.forEach(function (img) {
+        img.style.height = H + 'px';
+        img.style.width = 'auto';
+      });
+    }
+
+    // Trigger after each image loads
+    var loaded = 0;
+    imgs.forEach(function (img) {
+      if (img.complete && img.naturalWidth) {
+        loaded++;
+        if (loaded >= imgs.length) compute();
+      } else {
+        img.addEventListener('load', function () {
+          loaded++;
+          if (loaded >= imgs.length) compute();
+        });
+      }
+    });
+
+    // Re-compute on resize
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(compute, 80);
+    });
+  }
+  fitDualImages();
 })();

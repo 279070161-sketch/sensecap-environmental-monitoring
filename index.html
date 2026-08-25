@@ -18,15 +18,9 @@
           <img src="sensecap-logo.svg" alt="SenseCAP Logo" class="brand-logo" />
         </a>
         <nav class="main-nav" aria-label="Primary navigation">
-          <a href="https://www.aliexpress.com/store/1104653196" target="_blank" rel="noreferrer">Aliexpress Store</a>
-          <a href="https://www.seeed.cc/selection/weather-station" target="_blank" rel="noreferrer">Seeed Solution</a>
-          <a href="https://seeedstudio.en.alibaba.com/productgrouplist-956236838/Weather_Station.html?spm=a2700.shop_index.74.6.4516fcd8IGL74E" target="_blank" rel="noreferrer">ALIBABA</a>
-          <a href="https://wiki.seeedstudio.com/SenseCAP-ONE-Compact-Weather-Station-Introduction/" target="_blank" rel="noreferrer">wiki</a>
-          <a href="https://www.linkedin.com/showcase/seeed-weather-station" target="_blank" rel="noreferrer">linkedin</a>
+          <a href="https://www.aliexpress.com/store/1104653196" target="_blank" rel="noreferrer">Aliexpress</a>
+          <a href="https://seeedstudio.en.alibaba.com/productgrouplist-956236838/Weather_Station.html?spm=a2700.shop_index.74.6.4516fcd8IGL74E" target="_blank" rel="noreferrer">Alibaba</a>
         </nav>
-        <a class="header-cta" href="mailto:sensecap@seeed.cc">
-          Contact us <span aria-hidden="true">↗</span>
-        </a>
       </header>
 
       <section class="hero" id="top" aria-labelledby="hero-title">
@@ -43,6 +37,11 @@
           <p class="hero-summary">
             Compact all-in-one weather stations, rugged sensors, and industrial interfaces for agriculture, hydrology, and urban applications.
           </p>
+          <div class="hero-actions">
+            <a href="https://www.seeed.cc/selection/weather-station" target="_blank" rel="noreferrer" class="button button-ghost">Seeed Solution <span aria-hidden="true">↗</span></a>
+            <a href="https://wiki.seeedstudio.com/SenseCAP-ONE-Compact-Weather-Station-Introduction/" target="_blank" rel="noreferrer" class="button button-ghost">Wiki <span aria-hidden="true">↗</span></a>
+            <a href="#contact-sec" class="button button-ghost">Contact Us <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </section>
 
@@ -123,10 +122,11 @@
 
               <fieldset class="filter-group">
                 <legend>Product type</legend>
-                <label class="filter-option"><input type="checkbox" name="product-type" value="weather" /><span>Weather Stations</span><small>10</small></label>
-                <label class="filter-option"><input type="checkbox" name="product-type" value="sensor" /><span>Sensor Probes</span><small>38</small></label>
-                <label class="filter-option"><input type="checkbox" name="product-type" value="lorawan" /><span>LoRaWAN Sensors</span><small>8</small></label>
-                <label class="filter-option"><input type="checkbox" name="product-type" value="support" /><span>Data Logger and Accessories</span><small>10</small></label>
+                <label class="filter-option"><input type="radio" name="product-type" value="all" checked /><span>All</span><small>66</small></label>
+                <label class="filter-option"><input type="radio" name="product-type" value="weather" /><span>Weather Stations</span><small>10</small></label>
+                <label class="filter-option"><input type="radio" name="product-type" value="sensor" /><span>Sensor Probes</span><small>38</small></label>
+                <label class="filter-option"><input type="radio" name="product-type" value="lorawan" /><span>LoRaWAN Sensors</span><small>8</small></label>
+                <label class="filter-option"><input type="radio" name="product-type" value="support" /><span>Data Logger and Accessories</span><small>10</small></label>
               </fieldset>
 
               <fieldset class="filter-group parameter-group">
@@ -142,6 +142,54 @@
               <div class="product-groups" data-product-groups></div>
               <noscript>Please enable JavaScript to use the product selector.</noscript>
             </div>
+          </div>
+      </section>
+
+      <section class="deployments-section" id="deployments" aria-labelledby="deployments-title">
+        <div class="shell">
+          <div class="deployments-heading">
+            <div>
+              <span class="deployments-eyebrow">Agriculture, Crop production, Environmental Research</span>
+              <h2 id="deployments-title">Real-world deployments</h2>
+            </div>
+          </div>
+
+          <div class="deployments-accordion">
+            <article class="deployment-accordion-card">
+              <div class="deployment-bg">
+                <img src="images/r1.jpg" alt="Regional Weather Intelligence for Hungarian Agriculture" loading="lazy" />
+                <div class="deployment-overlay"></div>
+              </div>
+              <div class="deployment-content">
+                <span class="deployment-tag">Hungary • Regional Mapping</span>
+                <h3>Regional Weather Intelligence for Hungarian Agriculture</h3>
+                <p class="deployment-desc">SenseCAP environmental monitoring systems support regional weather mapping and precision agriculture in Hungary, helping growers track temperature, rainfall, humidity, wind, and other field conditions across Central European farmland.</p>
+              </div>
+            </article>
+
+            <article class="deployment-accordion-card">
+              <div class="deployment-bg">
+                <img src="images/r2.png" alt="Microclimate Monitoring for Vegetable Farms in Czechia" loading="lazy" />
+                <div class="deployment-overlay"></div>
+              </div>
+              <div class="deployment-content">
+                <span class="deployment-tag">Czechia • Vegetable Farms</span>
+                <h3>Microclimate Monitoring for Vegetable Farms in Czechia</h3>
+                <p class="deployment-desc">Deployed in Czech vegetable-growing regions, SenseCAP sensors provide localized weather and soil data for zucchini and open-field crop production, supporting irrigation planning, plant health monitoring, and climate-resilient farming.</p>
+              </div>
+            </article>
+
+            <article class="deployment-accordion-card">
+              <div class="deployment-bg">
+                <img src="images/r3.png" alt="Field Monitoring for Serbian Vegetable Production" loading="lazy" />
+                <div class="deployment-overlay"></div>
+              </div>
+              <div class="deployment-content">
+                <span class="deployment-tag">Serbia • Open Field</span>
+                <h3>Field Monitoring for Serbian Vegetable Production</h3>
+                <p class="deployment-desc">Across Serbia’s agricultural regions, SenseCAP weather stations help monitor the microclimate surrounding carrots, onions, leafy vegetables, and other field crops, enabling more informed irrigation and crop management decisions.</p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -173,6 +221,113 @@
             </div>
           </div>
           <div class="editorial-track" id="insight-track" data-blog-track></div>
+        </div>
+      </section>
+
+      <!-- SenseCraft Data Platform & API Integration Section -->
+      <section class="sensecraft-section" id="sensecraft" aria-labelledby="sensecraft-title" data-screen-label="Data Platform">
+        <div class="shell">
+          <div class="sensecraft-header-split">
+            <div class="sc-header-left">
+              <h2 id="sensecraft-title">From Field Measurements to Better Decisions</h2>
+              <p class="sensecraft-intro">Measure &middot; Transmit &middot; Visualize &middot; Integrate &middot; Decide</p>
+            </div>
+            <div class="sc-header-right">
+              <img src="images/ziyuan23.png" alt="From Field Measurements to Better Decisions Architecture" class="sensecraft-hero-img" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="sensecraft-stacked-rows">
+            <!-- Row 1: SENSECRAFT (Ready-to-Use Data Management) -->
+            <div class="sensecraft-row-card">
+              <div class="sc-row-media">
+                <div class="sensecraft-dual-image-wrap">
+                  <div class="sc-img-item">
+                    <img src="images/SENSECRAFT1.png" alt="SenseCraft App Data View" loading="lazy" />
+                  </div>
+                  <div class="sc-img-item">
+                    <img src="images/SENSECRAFT2.png" alt="SenseCraft Dashboard & Device View" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="sc-row-content">
+                <div class="sensecraft-card-header">
+                  <span class="sensecraft-card-tag">SENSECRAFT</span>
+                  <h3>Ready-to-Use Data Management</h3>
+                </div>
+
+                <ul class="sensecraft-checklist">
+                  <li>
+                    <svg class="sc-icon-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    <span>Live device and measurement view</span>
+                  </li>
+                  <li>
+                    <svg class="sc-icon-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    <span>Site-based dashboards and historical charts</span>
+                  </li>
+                  <li>
+                    <svg class="sc-icon-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    <span>Filtered data queries and export</span>
+                  </li>
+                </ul>
+
+                <div class="sensecraft-workflow">
+                  <span class="workflow-label">Steps:</span> Bind Device <span class="wf-arrow">&rarr;</span> Select Data <span class="wf-arrow">&rarr;</span> Build Dashboard
+                </div>
+
+                <div class="sensecraft-card-footer">
+                  <a href="https://wiki.seeedstudio.com/cloud/sensecraft-data/sensecraft-data-platform/overview" target="_blank" rel="noopener noreferrer" class="sensecraft-btn sc-btn-primary">
+                    <span>SET UP WITH SENSECRAFT</span>
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 2: YOUR DATA PLATFORM (API-Based Data Access) -->
+            <div class="sensecraft-row-card sc-row-alt">
+              <div class="sc-row-content">
+                <div class="sensecraft-card-header">
+                  <span class="sensecraft-card-tag sc-tag-alt">YOUR DATA PLATFORM</span>
+                  <h3>API-Based Data Access</h3>
+                </div>
+
+                <ul class="sensecraft-checklist">
+                  <li>
+                    <svg class="sc-icon-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    <span>Retain existing dashboards and workflows</span>
+                  </li>
+                  <li>
+                    <svg class="sc-icon-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    <span>Current and historical data through HTTP API</span>
+                  </li>
+                  <li>
+                    <svg class="sc-icon-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    <span>Real-time subscriptions through MQTT or WebSocket</span>
+                  </li>
+                </ul>
+
+                <div class="sensecraft-workflow">
+                  <span class="workflow-label">Steps:</span> Create Access Key <span class="wf-arrow">&rarr;</span> Choose API <span class="wf-arrow">&rarr;</span> Retrieve or Subscribe
+                </div>
+
+                <div class="sensecraft-card-footer">
+                  <a href="https://wiki.seeedstudio.com/sensecraft-data-platform/sensecraft-data-platform-api/sensecraft-data-platform-api" target="_blank" rel="noopener noreferrer" class="sensecraft-btn sc-btn-secondary">
+                    <span>INTEGRATE WITH YOUR PLATFORM</span>
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="sc-row-media">
+                <!-- YouTube Video Player for Row 2 (16:9 Autoplay) -->
+                <div class="sc-video-container">
+                  <iframe src="https://www.youtube-nocookie.com/embed/TUQ9UmF7e7A?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=TUQ9UmF7e7A&amp;controls=1&amp;rel=0" title="SenseCraft Data Platform Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
