@@ -1329,17 +1329,43 @@ window.SENSECAP_EDITORIAL = {
     var cards = document.querySelectorAll(".deployment-accordion-card");
     if (!cards.length) return;
 
+    function playActiveCardVideo(activeCard) {
+      cards.forEach(function (c) {
+        var video = c.querySelector(".deployment-video");
+        if (c === activeCard) {
+          c.classList.add("active");
+          if (video) {
+            var promise = video.play();
+            if (promise !== undefined) {
+              promise.catch(function () { /* Auto-play was prevented */ });
+            }
+          }
+        } else {
+          c.classList.remove("active");
+          if (video) {
+            video.pause();
+            video.currentTime = 0;
+          }
+        }
+      });
+    }
+
     cards.forEach(function (card) {
       card.addEventListener("mouseenter", function () {
-        cards.forEach(function (c) { c.classList.remove("active"); });
-        card.classList.add("active");
+        playActiveCardVideo(card);
       });
       card.addEventListener("click", function () {
-        cards.forEach(function (c) { c.classList.remove("active"); });
-        card.classList.add("active");
+        playActiveCardVideo(card);
       });
     });
+
+    // Initial state: play video for the active/first card
+    var initialActive = document.querySelector(".deployment-accordion-card.active") || cards[0];
+    if (initialActive) {
+      playActiveCardVideo(initialActive);
+    }
   }
+
 
   function bindContactForm() {
     setupContactNeuralCanvas();
@@ -1477,4 +1503,49 @@ window.SENSECAP_EDITORIAL = {
     });
   }
   fitDualImages();
+
+  // Animated Count-Up for Stat Items
+  function initCountUpStats() {
+    var statItems = document.querySelectorAll(".stat-item");
+    if (!statItems.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var strong = entry.target.querySelector("strong");
+          if (!strong || strong.dataset.animated) return;
+          strong.dataset.animated = "true";
+          entry.target.classList.add("is-visible");
+
+          var rawText = strong.textContent.trim();
+          var match = rawText.match(/^(\d+)(\+?)$/);
+          if (!match) return;
+
+          var targetVal = parseInt(match[1], 10);
+          var suffix = match[2] || "";
+          var duration = 1600;
+          var startTime = null;
+
+          function step(timestamp) {
+            if (!startTime) startTime = timestamp;
+            var progress = Math.min((timestamp - startTime) / duration, 1);
+            var easeProgress = 1 - Math.pow(1 - progress, 3);
+            var currentVal = Math.floor(easeProgress * targetVal);
+            strong.textContent = currentVal + suffix;
+            if (progress < 1) {
+              requestAnimationFrame(step);
+            } else {
+              strong.textContent = targetVal + suffix;
+            }
+          }
+          requestAnimationFrame(step);
+        }
+      });
+    }, { threshold: 0.4 });
+
+    statItems.forEach(function (item) { observer.observe(item); });
+  }
+
+  initCountUpStats();
 })();
+
