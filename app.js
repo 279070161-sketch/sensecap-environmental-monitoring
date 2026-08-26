@@ -814,6 +814,18 @@ window.SENSECAP_PRODUCTS = [
     "sourceOrder": 68,
     "image": "images/products/114993078.jpg"
   },
+  {
+    "sku": "114993078_s2107",
+    "name": "SenseCAP S2107 LoRaWAN® Temperature Sensor with PT1000",
+    "type": "lorawan",
+    "parameters": [
+      "Temperature"
+    ],
+    "url": "https://www.seeedstudio.com/SenseCAP-S2107-Temperature-Sensor-p-5807.html",
+    "bestSellerRank": null,
+    "sourceOrder": 68.5,
+    "image": "images/products/114993078_s2107.jpg"
+  },
 
   {
     "sku": "114993004",
@@ -833,6 +845,7 @@ window.SENSECAP_PRODUCTS = [
     "sourceOrder": 69,
     "image": "images/products/114993004.png"
   }
+
 ];
 
 
