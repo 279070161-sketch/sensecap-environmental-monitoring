@@ -94,7 +94,7 @@ window.SENSECAP_PRODUCTS = [
     "url": "https://www.seeedstudio.com/RS485-pH-ORP-and-Temperature-Sensor-p-6945.html",
     "bestSellerRank": 8,
     "sourceOrder": 9,
-    "image": "images/products/100050803.png"
+    "image": "images/products/100050803.jpg"
   },
 
   {
@@ -344,7 +344,7 @@ window.SENSECAP_PRODUCTS = [
     "url": "https://www.seeedstudio.com/RS485-Oxygen-Concentration-O2-Sensor-p-6941.html",
     "bestSellerRank": null,
     "sourceOrder": 29,
-    "image": "images/products/100046309.png"
+    "image": "images/products/100046309.jpg"
   },
   {
     "sku": "100069114",
@@ -356,8 +356,9 @@ window.SENSECAP_PRODUCTS = [
     "url": "https://www.seeedstudio.com/RS485-Carbon-Monoxide-CO-Sensor-p-6946.html",
     "bestSellerRank": null,
     "sourceOrder": 30,
-    "image": "images/products/100069114.png"
+    "image": "images/products/100069114.jpg"
   },
+
   {
     "sku": "100089706",
     "name": "RS485 VOC, NOx, Temperature and Humidity Sensor",
@@ -368,7 +369,7 @@ window.SENSECAP_PRODUCTS = [
     "url": "https://www.seeedstudio.com/RS485-VOC-NOx-Temperature-and-Humidity-Sensor-p-6947.html",
     "bestSellerRank": null,
     "sourceOrder": 31,
-    "image": "images/products/100089706.png"
+    "image": "images/products/100089706.jpg"
   },
   {
     "sku": "101990760",
@@ -802,7 +803,7 @@ window.SENSECAP_PRODUCTS = [
   },
   {
     "sku": "114993078",
-    "name": "SenseCAP S2106 LoRaWAN Soil pH, Moisture, Temperature, EC, Nitrogen, Phosphorus and Potassium Sensor",
+    "name": "SenseCAP S2106 LoRaWAN® pH Sensor",
     "type": "lorawan",
     "parameters": [
       "Soil Monitoring",
@@ -831,18 +832,9 @@ window.SENSECAP_PRODUCTS = [
     "bestSellerRank": null,
     "sourceOrder": 69,
     "image": "images/products/114993004.png"
-  },
-  {
-    "sku": "114993003",
-    "name": "SenseCAP S2110 LoRaWAN RS485 Sensor Controller - Connect Up to 8 Sensors",
-    "type": "lorawan",
-    "parameters": [],
-    "url": "https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html",
-    "bestSellerRank": null,
-    "sourceOrder": 70,
-    "image": "images/products/114993003.jpg"
   }
 ];
+
 
 window.SENSECAP_EDITORIAL = {
   cases: [
@@ -1018,18 +1010,23 @@ window.SENSECAP_EDITORIAL = {
   }
 
   function effectiveTypes() {
-    return Array.from(state.selectedTypes);
+    return allTypes.filter(function (t) {
+      return state.selectedTypes.has(t);
+    });
   }
 
 
+
   function matchesParameters(product) {
-    if (state.parameters.size === 0) return true;
+    // Data Logger and Accessories (logger & accessory) do NOT participate in parameter filtering
     if (product.type === "logger" || product.type === "accessory") return true;
+    if (state.parameters.size === 0) return true;
     if (!Array.isArray(product.parameters) || product.parameters.length === 0) return false;
     return Array.from(state.parameters).every(function (parameter) {
       return product.parameters.includes(parameter);
     });
   }
+
 
   function getProductImage(product) {
     if (product.image) return product.image;
