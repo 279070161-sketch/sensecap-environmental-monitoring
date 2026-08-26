@@ -703,7 +703,7 @@ window.SENSECAP_PRODUCTS = [
     "url": "https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html",
     "bestSellerRank": null,
     "sourceOrder": 59,
-    "image": "images/products/114992872.png"
+    "image": "images/products/114992872.jpg"
   },
   {
     "sku": "114992170",
@@ -1329,42 +1329,18 @@ window.SENSECAP_EDITORIAL = {
     var cards = document.querySelectorAll(".deployment-accordion-card");
     if (!cards.length) return;
 
-    function playActiveCardVideo(activeCard) {
-      cards.forEach(function (c) {
-        var video = c.querySelector(".deployment-video");
-        if (c === activeCard) {
-          c.classList.add("active");
-          if (video) {
-            var promise = video.play();
-            if (promise !== undefined) {
-              promise.catch(function () { /* Auto-play was prevented */ });
-            }
-          }
-        } else {
-          c.classList.remove("active");
-          if (video) {
-            video.pause();
-            video.currentTime = 0;
-          }
-        }
-      });
-    }
-
     cards.forEach(function (card) {
       card.addEventListener("mouseenter", function () {
-        playActiveCardVideo(card);
+        cards.forEach(function (c) { c.classList.remove("active"); });
+        card.classList.add("active");
       });
       card.addEventListener("click", function () {
-        playActiveCardVideo(card);
+        cards.forEach(function (c) { c.classList.remove("active"); });
+        card.classList.add("active");
       });
     });
-
-    // Initial state: play video for the active/first card
-    var initialActive = document.querySelector(".deployment-accordion-card.active") || cards[0];
-    if (initialActive) {
-      playActiveCardVideo(initialActive);
-    }
   }
+
 
 
   function bindContactForm() {
@@ -1546,6 +1522,62 @@ window.SENSECAP_EDITORIAL = {
     statItems.forEach(function (item) { observer.observe(item); });
   }
 
+  // Scroll Reveal Animation Engine
+  function initScrollReveal() {
+    // Select elements to reveal
+    var targets = document.querySelectorAll([
+      ".stat-item",
+      ".feature-card",
+      ".product-finder .selector-layout",
+      ".deployments-heading",
+      ".deployment-accordion-card",
+      ".editorial-heading",
+      ".editorial-card",
+      ".sensecraft-header-split",
+      ".sensecraft-row-card",
+      ".contact-inner"
+    ].join(","));
+
+    if (!targets.length) return;
+
+    // Add base reveal-on-scroll class and staggered delays to siblings
+    targets.forEach(function (el) {
+      el.classList.add("reveal-on-scroll");
+
+      // Apply staggered delays for grid/flex sibling items
+      var parent = el.parentElement;
+      if (parent) {
+        var siblings = Array.prototype.filter.call(parent.children, function (child) {
+          return child.classList.contains("reveal-on-scroll") || child.matches(".feature-card, .stat-item, .deployment-accordion-card, .editorial-card");
+        });
+        var index = siblings.indexOf(el);
+        if (index > 0) {
+          var delayClass = "reveal-delay-" + Math.min(index, 5);
+          el.classList.add(delayClass);
+        }
+      }
+    });
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-revealed");
+          // Unobserve once revealed for smooth performance
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: "0px 0px -40px 0px"
+    });
+
+    targets.forEach(function (el) {
+      observer.observe(el);
+    });
+  }
+
   initCountUpStats();
+  initScrollReveal();
 })();
+
 
