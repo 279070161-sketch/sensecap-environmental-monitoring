@@ -959,13 +959,14 @@ window.SENSECAP_EDITORIAL = {
     support: { title: "Data Logger and Accessories", eyebrow: "Connectivity and deployment essentials" }
   };
   var pageSize = 10;
+  var typeInputs = Array.from(document.querySelectorAll('input[name="product-type"]'));
+  // Initialize selectedTypes from actual DOM checked state
+  var initialChecked = typeInputs.filter(function (i) { return i.checked; }).map(function (i) { return i.value; });
   var state = {
-    selectedTypes: new Set(),
+    selectedTypes: new Set(initialChecked.length ? initialChecked : allTypes),
     parameters: new Set(),
     pages: { weather: 1, sensor: 1, lorawan: 1, support: 1 }
   };
-
-  var typeInputs = Array.from(document.querySelectorAll('input[name="product-type"]'));
   var parameterRoot = document.querySelector("[data-parameter-options]");
   var groupsRoot = document.querySelector("[data-product-groups]");
   var summaryRoot = document.querySelector("[data-results-summary]");
@@ -1213,6 +1214,7 @@ window.SENSECAP_EDITORIAL = {
 
   if (clearButton) {
     clearButton.addEventListener("click", function () {
+      // "Clear" resets to all types selected
       state.selectedTypes = new Set(allTypes);
       state.parameters.clear();
       resetPages();

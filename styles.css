@@ -1,4 +1,4 @@
-/* v2.1 - 20240825 */
+/* v2.2 - 20260826 */
 :root {
   --ink: #071722;
   --muted: #536a78;
@@ -14,6 +14,32 @@
   --shell: calc(100vw - max(48px, 6vw));
   --shell-gutter: max(24px, 3vw);
 }
+
+/* ── Accessibility: skip link ── */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  z-index: 10000;
+  padding: 10px 18px;
+  background: var(--seeed-green);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 0 0 8px 8px;
+  text-decoration: none;
+  transition: top .15s ease;
+}
+.skip-link:focus { top: 0; outline: 3px solid #fff; outline-offset: 2px; }
+
+/* ── Accessibility: visible focus ring for all interactive elements ── */
+:focus-visible {
+  outline: 2px solid var(--seeed-green);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+/* Remove default outline only when :focus-visible is supported */
+:focus:not(:focus-visible) { outline: none; }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
