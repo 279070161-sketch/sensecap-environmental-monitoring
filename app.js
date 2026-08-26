@@ -376,7 +376,7 @@ window.SENSECAP_PRODUCTS = [
     "name": "Rain Gauge RG-9",
     "type": "sensor",
     "parameters": [
-      "Rainfall(Optical)"
+      "Rainfall(Optical & Other)"
     ],
     "url": "https://www.seeedstudio.com/Rain-Gauge-RG-9-p-4744.html",
     "bestSellerRank": null,
@@ -388,13 +388,14 @@ window.SENSECAP_PRODUCTS = [
     "name": "Rain Gauge RG-15",
     "type": "sensor",
     "parameters": [
-      "Rainfall(Optical)"
+      "Rainfall(Optical & Other)"
     ],
     "url": "https://www.seeedstudio.com/Rain-Gauge-RG-15-p-4648.html",
     "bestSellerRank": null,
     "sourceOrder": 33,
     "image": "images/products/114992321.png"
   },
+
   {
     "sku": "314990633",
     "name": "RS485 Dissolved Oxygen Sensor - Connector",
@@ -525,7 +526,7 @@ window.SENSECAP_PRODUCTS = [
       "Humidity",
       "Air Pressure",
       "Light Intensity",
-      "Rainfall(Optical)",
+      "Rainfall(Optical & Other)",
       "Wind Speed & Wind Direction",
       "PM2.5 & PM10",
       "Gas"
@@ -545,7 +546,7 @@ window.SENSECAP_PRODUCTS = [
       "Air Pressure",
       "Light Intensity",
       "Wind Speed & Wind Direction",
-      "Rainfall(Optical)",
+      "Rainfall(Optical & Other)",
       "UV Index"
     ],
     "url": "https://www.seeedstudio.com/sensecap-s2120-lorawan-8-in-1-weather-sensor-p-5436.html",
@@ -553,6 +554,7 @@ window.SENSECAP_PRODUCTS = [
     "sourceOrder": 45,
     "image": "images/products/114993004.png"
   },
+
   {
     "sku": "101991050",
     "name": "SenseCAP S700A 7-in-1 Compact Weather Station-Radar Rain【Best Seller 1】",
@@ -598,7 +600,7 @@ window.SENSECAP_PRODUCTS = [
       "Air Pressure",
       "Light Intensity",
       "Wind Speed & Wind Direction",
-      "Rainfall(Optical)"
+      "Rainfall(Optical & Other)"
     ],
     "url": "https://www.seeedstudio.com/SenseCAP-S700-7-in-1-Compact-Weather-Station-p-5651.html",
     "bestSellerRank": 3,
@@ -614,7 +616,7 @@ window.SENSECAP_PRODUCTS = [
       "Humidity",
       "Air Pressure",
       "Wind Speed & Wind Direction",
-      "Rainfall(Optical)",
+      "Rainfall(Optical & Other)",
       "Total Solar Radiation",
       "Sunshine Duration"
     ],
@@ -623,6 +625,7 @@ window.SENSECAP_PRODUCTS = [
     "sourceOrder": 49,
     "image": "images/products/101991102.jpg"
   },
+
   {
     "sku": "101991021",
     "name": "SenseCAP S500 5-in-1 Compact Weather Station【Best Seller 5】",
@@ -834,7 +837,7 @@ window.SENSECAP_PRODUCTS = [
     "parameters": [
       "Temperature",
       "Humidity",
-      "Rainfall(Radar)",
+      "Rainfall(Optical & Other)",
       "UV Index",
       "Light Intensity",
       "Air Pressure",
@@ -845,6 +848,7 @@ window.SENSECAP_PRODUCTS = [
     "sourceOrder": 69,
     "image": "images/products/114993004.png"
   }
+
 
 ];
 
