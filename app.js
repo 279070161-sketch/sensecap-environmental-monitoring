@@ -88,13 +88,15 @@ window.SENSECAP_PRODUCTS = [
     "name": "RS485 pH, ORP and Temperature Sensor【Best Seller 8】",
     "type": "sensor",
     "parameters": [
-      "Water Quality Monitoring"
+      "Water Quality Monitoring",
+      "pH"
     ],
     "url": "https://www.seeedstudio.com/RS485-pH-ORP-and-Temperature-Sensor-p-6945.html",
     "bestSellerRank": 8,
     "sourceOrder": 9,
     "image": "images/products/100050803.png"
   },
+
   {
     "sku": "101991028",
     "name": "SenseCAP CO2, Temperature and Humidity Sensor with RS485&SDI-12【Best Seller 9】",
@@ -803,13 +805,15 @@ window.SENSECAP_PRODUCTS = [
     "name": "SenseCAP S2106 LoRaWAN Soil pH, Moisture, Temperature, EC, Nitrogen, Phosphorus and Potassium Sensor",
     "type": "lorawan",
     "parameters": [
-      "Soil Monitoring"
+      "Soil Monitoring",
+      "pH"
     ],
     "url": "https://www.seeedstudio.com/SenseCAP-S2106-p-5647.html",
     "bestSellerRank": null,
     "sourceOrder": 68,
     "image": "images/products/114993078.jpg"
   },
+
   {
     "sku": "114993004",
     "name": "SenseCAP S2120 8-in-1 LoRaWAN Weather Sensor - Wind Speed, Wind Direction, Air Temp & Humidity, Rainfall, UV Index, Light Intensity, Barometric Pressure",
@@ -1014,13 +1018,14 @@ window.SENSECAP_EDITORIAL = {
   }
 
   function effectiveTypes() {
-    if (state.selectedTypes.size === 0) return allTypes;
     return Array.from(state.selectedTypes);
   }
 
+
   function matchesParameters(product) {
-    if (product.type === "logger" || product.type === "accessory" || product.type === "lorawan") return true;
     if (state.parameters.size === 0) return true;
+    if (product.type === "logger" || product.type === "accessory") return true;
+    if (!Array.isArray(product.parameters) || product.parameters.length === 0) return false;
     return Array.from(state.parameters).every(function (parameter) {
       return product.parameters.includes(parameter);
     });
@@ -1044,9 +1049,10 @@ window.SENSECAP_EDITORIAL = {
     if (!parameterRoot) return;
     var parameters = Array.from(new Set(
       products
-        .filter(function (product) { return product.type === "weather" || product.type === "sensor"; })
-        .flatMap(function (product) { return product.parameters; })
+        .filter(function (product) { return product.type === "weather" || product.type === "sensor" || product.type === "lorawan"; })
+        .flatMap(function (product) { return product.parameters || []; })
     )).sort(function (a, b) { return a.localeCompare(b); });
+
 
     parameterRoot.innerHTML = parameters.map(function (parameter) {
       return '<label class="parameter-option"><input type="checkbox" name="parameter" value="' + escapeHtml(parameter) + '"><span>' + escapeHtml(parameter) + '</span></label>';
@@ -1113,10 +1119,18 @@ window.SENSECAP_EDITORIAL = {
   function renderProducts() {
     if (!groupsRoot || !summaryRoot) return;
     var activeTypes = effectiveTypes();
+
+    if (activeTypes.length === 0) {
+      groupsRoot.innerHTML = '<div class="empty-state"><span>No product types selected</span><p>Please select at least one product type from the left filter panel to display weather stations, sensors, or data loggers.</p></div>';
+      summaryRoot.textContent = "0 products (Please select at least one product type)";
+      return;
+    }
+
     var isSingleType = activeTypes.length === 1;
     var hasParams = state.parameters.size > 0;
     var isGrid = isSingleType && !hasParams;
     var total = 0;
+
 
     groupsRoot.innerHTML = activeTypes.map(function (type) {
       var matching = sortProducts(products.filter(function (product) {
