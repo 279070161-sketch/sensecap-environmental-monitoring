@@ -856,25 +856,11 @@ window.SENSECAP_PRODUCTS = [
 window.SENSECAP_EDITORIAL = {
   cases: [
     {
-      title: "Ready to Deploy Solution: SenseCAP and Machinechat JEDI One Optimize Greenhouse Operations",
-      preview: "SenseCAP LoRaWAN sensors and gateways measure and transfer temperature, humidity, moisture, and light data while Machinechat JEDI One accelerates secure environmental monitoring deployment.",
-      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2021/09/Seeed-x-machinchat-x-digi-key.jpg",
-      url: "https://www.seeed.cc/post/ready-to-deploy-solution-seeeds-sensecap-and-machinechats-jedi-one-together-optimizes-greenhouse-operations",
-      tag: "Greenhouse"
-    },
-    {
       title: "Smart Greenhouse Enables Tropical Fruit Cultivation in Northern China",
       preview: "The Laiwu project applies SenseCAP LoRaWAN monitoring to tropical fruit cultivation, equipping northern farmers with automated control insights and practical precision farming data.",
       image: "https://www.seeedstudio.com/blog/wp-content/uploads/2021/09/Tropical-fruits-in-the-North-4.jpg",
       url: "https://www.seeed.cc/post/smart-greenhouse-for-sustainable-agriculture-sensecap-lorawan-enables-tropical-fruit-cultivation-in-northern-china",
       tag: "Agriculture"
-    },
-    {
-      title: "Smart Farming with Seeed Edge Controller and reTerminal DM",
-      preview: "Greenhouse and poultry farms use industrial sensors, edge control, and remote visualization to monitor environmental parameters for healthier plants, animals, and more efficient operations.",
-      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2023/03/%E6%88%AA%E5%B1%8F2023-03-31-18.03.48.png",
-      url: "https://www.seeed.cc/post/smart-farming-together-with-seeed-studio-edge-controller-and-reterminal-dm",
-      tag: "Edge Control"
     },
     {
       title: "SenseCAP LoRaWAN Empowers Precision Agriculture on an Outdoor Triticale Farm",
@@ -883,7 +869,6 @@ window.SENSECAP_EDITORIAL = {
       url: "https://www.seeed.cc/post/sensecap-lorawan-deployed-in-outdoor-triticale-farm-empowering-precision-agriculture-in-dingzhou-hebei-province-northern-china",
       tag: "Field Monitoring"
     },
-
     {
       title: "Rice Pest and Disease Monitoring for a More Predictable Harvest",
       preview: "SenseCAP weather stations, water sensors, a 4G Sensor Hub, and software monitoring combine meteorological and field data to support earlier rice pest warnings.",
@@ -915,18 +900,46 @@ window.SENSECAP_EDITORIAL = {
   ],
   blogs: [
     {
+      title: "Solar Radiation Sensors: Thermopile vs. Photodiode",
+      preview: "A practical comparison of thermopile and photodiode sensing technologies for solar radiation measurement, helping you choose the right sensor for weather stations and environmental monitoring.",
+      image: "images/products/114993004.png",
+      url: "https://www.seeedstudio.com/blog/2026/08/26/solar-radiation-sensors-thermopile-vs-photodiode/",
+      tag: "Sensor Guide"
+    },
+    {
+      title: "Radar Compact Weather Station: SenseCAP S700-C IoT",
+      preview: "An introduction to the SenseCAP S700-C 7-in-1 compact weather station, combining radar rainfall sensing with total solar radiation measurement for IoT environmental monitoring.",
+      image: "images/products/101991141.jpg",
+      url: "https://www.seeedstudio.com/blog/2026/05/22/radar-compact-weather-station-sensecap-s700-c-iot/",
+      tag: "Weather Station"
+    },
+    {
+      title: "Rice Pest and Disease Monitoring for a More Predictable Harvest",
+      preview: "SenseCAP weather stations, water sensors, a 4G Sensor Hub, and software monitoring combine meteorological and field data to support earlier rice pest warnings.",
+      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2023/08/ac37bd6f-477f-47fa-8bc2-22968bc95cea.png",
+      url: "https://www.seeed.cc/post/rice-pest-and-disease-monitoring-solution-to-ensure-a-bountiful-harvest",
+      tag: "Crop Protection"
+    },
+    {
+      title: "SenseCAP LoRaWAN Empowers Precision Agriculture on an Outdoor Triticale Farm",
+      preview: "A distributed sensor network captures real-time field and microclimate conditions, helping growers understand crop requirements and make more informed agricultural management decisions.",
+      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2019/11/%E5%AE%9A%E5%B7%9E-1030x516.png",
+      url: "https://www.seeed.cc/post/sensecap-lorawan-deployed-in-outdoor-triticale-farm-empowering-precision-agriculture-in-dingzhou-hebei-province-northern-china",
+      tag: "Agriculture"
+    },
+    {
+      title: "Smart Tea Plantation Monitoring Enabled by SenseCAP LoRaWAN",
+      preview: "High-mountain tea farmers use real-time and historical environmental data to improve management efficiency while giving customers a transparent view of the plantation's growing conditions.",
+      image: "https://blog.seeedstudio.com/wp-content/uploads/2019/11/%E9%9B%85%E5%AE%89.png",
+      url: "https://www.seeedstudio.com/blog/2021/10/12/smart-tea-plantation-in-mengding-mountain-enabled-by-sensecap-lorawan-to-augment-resource-efficiency-and-customer-trust-for-sdgs/",
+      tag: "Agriculture"
+    },
+    {
       title: "Observing Real-Time Local Weather: Why You Should Have a Home Weather Station",
       preview: "Weather reports shape daily life and production, but distant stations can miss local conditions. A nearby weather station delivers data that reflects your actual site.",
       image: "https://www.seeedstudio.com/blog/wp-content/uploads/2022/09/45-font-1030x773.png",
       url: "https://www.seeedstudio.com/blog/2022/09/28/observing-the-real-time-local-weather-why-you-should-have-a-home-weather-station/",
       tag: "Field Guide"
-    },
-    {
-      title: "How We Tested the Performance of SenseCAP ONE Weather Station",
-      preview: "See how structural, waterproof, temperature, wind tunnel, and aging tests help verify the accuracy, reliability, and durability expected from industrial outdoor weather monitoring equipment.",
-      image: "https://blog.seeedstudio.com/wp-content/uploads/2021/05/Screen-Shot-2021-05-19-at-11.15.15-AM.png",
-      url: "https://www.seeedstudio.com/blog/2021/05/19/how-we-tested-the-performance-of-sensecap-one-weather-station/",
-      tag: "Engineering"
     },
     {
       title: "SenseCAP ONE S1000 Weather Station and Smart Pole Applications",
@@ -941,20 +954,6 @@ window.SENSECAP_EDITORIAL = {
       image: "https://blog.seeedstudio.com/wp-content/uploads/2020/09/structure-1030x253.png",
       url: "https://www.seeedstudio.com/blog/2020/09/17/brief-intro-of-seeed-iiot-products-choose-the-ones-to-meet-your-application-needs/",
       tag: "Portfolio"
-    },
-    {
-      title: "Smart City Environmental Monitoring Across More Than 300 Sites",
-      preview: "A city-scale network combines weather sensors, LoRaWAN data interfaces, connectivity, and analytical software to reveal localized temperature, humidity, air quality, wind, and rainfall conditions.",
-      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2023/04/SenseCAP-Devices-Deployed-on-Light-Pole.png",
-      url: "https://www.seeed.cc/post/smart-city-500-sensecap-lorawan-devices-deployed-to-mitigate-urban-heat-island-in-cagliari-italy",
-      tag: "Deployment"
-    },
-    {
-      title: "Smart Tea Plantation Monitoring Enabled by SenseCAP LoRaWAN",
-      preview: "High-mountain tea farmers use real-time and historical environmental data to improve management efficiency while giving customers a transparent view of the plantation’s growing conditions.",
-      image: "https://blog.seeedstudio.com/wp-content/uploads/2019/11/%E9%9B%85%E5%AE%89.png",
-      url: "https://www.seeed.cc/post/smart-agriculture-in-mengding-mountain-to-monitor-key-environmental-data-with-sensecap-lorawan-for-increasing-efficiency-and-customer-trust",
-      tag: "Agriculture"
     }
   ]
 };
@@ -1142,7 +1141,7 @@ window.SENSECAP_EDITORIAL = {
 
     var isSingleType = activeTypes.length === 1;
     var hasParams = state.parameters.size > 0;
-    var isGrid = isSingleType && !hasParams;
+    var isGrid = isSingleType;
     var total = 0;
 
 
@@ -1561,7 +1560,6 @@ window.SENSECAP_EDITORIAL = {
       ".deployment-accordion-card",
       ".editorial-heading",
       ".editorial-card",
-      ".sensecraft-header-split",
       ".sensecraft-row-card",
       ".contact-inner"
     ].join(","));
