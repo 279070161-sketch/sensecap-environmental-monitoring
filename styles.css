@@ -110,10 +110,15 @@ a { color: inherit; text-decoration: none; }
 .feature-product-img { position: absolute; right: calc(30% - 40px); bottom: 0; top: auto; height: 100%; max-height: 100%; width: auto; object-fit: contain; object-position: bottom center; pointer-events: none; z-index: 1; transform-origin: bottom center; transition: transform .4s cubic-bezier(.16,1,.3,1); }
 .feature-card2-product-img { position: absolute; left: 50%; top: 50%; bottom: auto; transform: translate(-50%, -50%); height: 88%; max-height: 90%; width: auto; object-fit: contain; object-position: center center; pointer-events: none; z-index: 1; transform-origin: center center; transition: left .5s cubic-bezier(.16,1,.3,1), transform .5s cubic-bezier(.16,1,.3,1); }
 .feature-card3-product-img { position: absolute; left: 90%; top: 50%; bottom: auto; transform: translate(-100%, 40%) scale(0.92); height: 88%; max-height: 90%; width: auto; object-fit: contain; object-position: center center; pointer-events: none; z-index: 1; opacity: 0; visibility: hidden; transform-origin: center center; transition: opacity .45s ease, visibility .45s ease, transform .6s cubic-bezier(0.34, 1.4, 0.64, 1); }
-.feature-card5-product-img { position: absolute; left: 50%; top: 50%; bottom: auto; transform: translate(-50%, -50%); height: 70%; max-height: 72%; width: auto; object-fit: contain; object-position: center center; pointer-events: none; z-index: 1; transform-origin: center center; transition: left .5s cubic-bezier(.16,1,.3,1), transform .5s cubic-bezier(.16,1,.3,1); }
+.feature-card5-product-img { position: absolute; right: 4%; left: auto; top: 50%; transform: translateY(-50%); height: 76%; max-height: 78%; width: auto; object-fit: contain; object-position: center right; pointer-events: none; z-index: 1; transform-origin: center right; transition: right .5s cubic-bezier(.16,1,.3,1), transform .5s cubic-bezier(.16,1,.3,1); }
+.feature-card.feature-connected .feature-copy { max-width: 60% !important; }
+.card-bg-layer { position: absolute; inset: -14px; z-index: 0; background-size: cover; background-position: center top; transition: filter .5s cubic-bezier(.16,1,.3,1), transform .5s cubic-bezier(.16,1,.3,1); }
+.feature-card:hover .card-bg-layer { filter: blur(7px) brightness(0.88); transform: scale(1.05); }
+.feature-platform:hover .card-bg-layer { filter: none !important; }
 .card-split-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
 .card-split-bg .bg-layer { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform .6s ease; }
 .card-split-bg .bg-left { clip-path: polygon(0 0, 62% 0, 38% 100%, 0 100%); }
+.feature-applications .bg-left { background-size: auto 100% !important; background-position: left center !important; background-repeat: no-repeat !important; }
 .card-split-bg .bg-right { clip-path: polygon(62% 0, 100% 0, 100% 100%, 38% 100%); }
 .feature-card:hover .card-split-bg .bg-layer { transform: scale(1.04); }
 .feature-card:hover .feature-product-img { transform: scale(1.02); }
@@ -145,7 +150,7 @@ a { color: inherit; text-decoration: none; }
 .callout-expandable  { top: 58%;   left: 68%; }
 .callout-conn        { top: 83.5%; left: 54%; }
 .feature-card:hover .feature-card3-product-img { opacity: 1; visibility: visible; left: 90%; top: 50%; transform: translate(-100%, -50%) scale(1.02); }
-.feature-card:hover .feature-card5-product-img { left: 50%; transform: translate(-50%, -50%) scale(1.05); }
+.feature-card:hover .feature-card5-product-img { left: auto; right: 4%; transform: translateY(-50%) scale(1.05); }
 
 .feature-platform { background-position: right center !important; }
 
@@ -715,6 +720,18 @@ a { color: inherit; text-decoration: none; }
   min-width: 0;
 }
 
+.deployment-accordion-card.deployment-content-top .deployment-content {
+  bottom: auto !important;
+  top: 28px !important;
+  justify-content: flex-start !important;
+}
+.deployment-accordion-card.deployment-content-top .deployment-overlay {
+  background: linear-gradient(0deg, rgba(4, 18, 28, 0.02) 0%, rgba(4, 18, 28, 0.25) 50%, rgba(3, 14, 23, 0.72) 100%);
+}
+.deployment-accordion-card.deployment-content-top:hover .deployment-overlay {
+  background: linear-gradient(0deg, rgba(4, 18, 28, 0.0) 0%, rgba(4, 18, 28, 0.18) 50%, rgba(3, 14, 23, 0.62) 100%);
+}
+
 .deployment-tag {
   display: inline-flex;
   align-items: center;
@@ -859,6 +876,27 @@ a { color: inherit; text-decoration: none; }
 .sc-logger-media {
   width: 100%;
   min-width: 0;
+  padding: 0 32px 0 16px;
+  box-sizing: border-box;
+}
+
+.sc-diagram-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  box-sizing: border-box;
+}
+.sc-diagram-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
+  display: block;
+  transform: scale(1.08);
+  transform-origin: center center;
 }
 
 @media (max-width: 992px) {
@@ -919,20 +957,6 @@ a { color: inherit; text-decoration: none; }
   color: #061824;
   line-height: 1.25;
   letter-spacing: -0.02em;
-}
-
-.sc-diagram-wrap {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.sc-diagram-img {
-  width: 100%;
-  height: auto;
-  max-height: 520px;
-  object-fit: contain;
-  display: block;
 }
 
 /* Distinctive brand-gradient accent for platform names in card titles */

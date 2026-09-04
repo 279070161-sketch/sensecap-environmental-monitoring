@@ -591,6 +591,22 @@ window.SENSECAP_PRODUCTS = [
     "image": "images/products/101991141.jpg"
   },
   {
+    "sku": "114993122",
+    "name": "SenseCAP Combo 5-in-1 Sensor with 4G",
+    "type": "weather",
+    "parameters": [
+      "Temperature",
+      "Humidity",
+      "Air Pressure",
+      "Light Intensity",
+      "Gas"
+    ],
+    "url": "https://www.seeedstudio.com/SenseCAP-Combo-5-in-1-Sensor-with-4G-p-6906.html",
+    "bestSellerRank": 3,
+    "sourceOrder": 47.5,
+    "image": "images/products/114993122.jpg"
+  },
+  {
     "sku": "101991022",
     "name": "SenseCAP S700 7-in-1 Compact Weather Station【Best Seller 3】",
     "type": "weather",
@@ -603,7 +619,7 @@ window.SENSECAP_PRODUCTS = [
       "Rainfall(Optical & Other)"
     ],
     "url": "https://www.seeedstudio.com/SenseCAP-S700-7-in-1-Compact-Weather-Station-p-5651.html",
-    "bestSellerRank": 3,
+    "bestSellerRank": 4,
     "sourceOrder": 48,
     "image": "images/products/101991022.jpg"
   },
@@ -621,9 +637,9 @@ window.SENSECAP_PRODUCTS = [
       "Sunshine Duration"
     ],
     "url": "https://www.seeedstudio.com/SenseCAP-S700-7-in-1-Compact-Weather-Station-Solar-Radiation-p-6305.html",
-    "bestSellerRank": 4,
+    "bestSellerRank": 5,
     "sourceOrder": 49,
-    "image": "images/products/101991102.jpg"
+    "image": "images/products/101991022.jpg"
   },
 
   {
@@ -637,7 +653,7 @@ window.SENSECAP_PRODUCTS = [
       "Wind Speed & Wind Direction"
     ],
     "url": "https://www.seeedstudio.com/SenseCAP-S500-5-in-1-Compact-Weather-Station-p-5652.htm",
-    "bestSellerRank": 5,
+    "bestSellerRank": 6,
     "sourceOrder": 50,
     "image": "images/products/101991021.jpg"
   },
