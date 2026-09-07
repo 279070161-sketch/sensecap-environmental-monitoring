@@ -872,20 +872,6 @@ window.SENSECAP_PRODUCTS = [
 window.SENSECAP_EDITORIAL = {
   cases: [
     {
-      title: "Smart Greenhouse Enables Tropical Fruit Cultivation in Northern China",
-      preview: "The Laiwu project applies SenseCAP LoRaWAN monitoring to tropical fruit cultivation, equipping northern farmers with automated control insights and practical precision farming data.",
-      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2021/09/Tropical-fruits-in-the-North-4.jpg",
-      url: "https://www.seeed.cc/post/smart-greenhouse-for-sustainable-agriculture-sensecap-lorawan-enables-tropical-fruit-cultivation-in-northern-china",
-      tag: "Agriculture"
-    },
-    {
-      title: "SenseCAP LoRaWAN Empowers Precision Agriculture on an Outdoor Triticale Farm",
-      preview: "A distributed sensor network captures real-time field and microclimate conditions, helping growers understand crop requirements and make more informed agricultural management decisions.",
-      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2019/11/%E5%AE%9A%E5%B7%9E-1030x516.png",
-      url: "https://www.seeed.cc/post/sensecap-lorawan-deployed-in-outdoor-triticale-farm-empowering-precision-agriculture-in-dingzhou-hebei-province-northern-china",
-      tag: "Field Monitoring"
-    },
-    {
       title: "Rice Pest and Disease Monitoring for a More Predictable Harvest",
       preview: "SenseCAP weather stations, water sensors, a 4G Sensor Hub, and software monitoring combine meteorological and field data to support earlier rice pest warnings.",
       image: "https://www.seeedstudio.com/blog/wp-content/uploads/2023/08/ac37bd6f-477f-47fa-8bc2-22968bc95cea.png",
@@ -898,13 +884,6 @@ window.SENSECAP_EDITORIAL = {
       image: "https://www.seeedstudio.com/blog/wp-content/uploads/2023/04/SenseCAP-Devices-Deployed-on-Light-Pole.png",
       url: "https://www.seeed.cc/post/smart-city-500-sensecap-lorawan-devices-deployed-to-mitigate-urban-heat-island-in-cagliari-italy",
       tag: "Smart City"
-    },
-    {
-      title: "High-Mountain Tea Monitoring Improves Efficiency and Customer Trust",
-      preview: "SenseCAP LoRaWAN products monitor key environmental conditions in Sichuan tea plantations, helping farmers lower management costs and demonstrate the quality of their growing environment.",
-      image: "https://blog.seeedstudio.com/wp-content/uploads/2019/11/%E9%9B%85%E5%AE%89.png",
-      url: "https://www.seeed.cc/post/smart-agriculture-in-mengding-mountain-to-monitor-key-environmental-data-with-sensecap-lorawan-for-increasing-efficiency-and-customer-trust",
-      tag: "Traceability"
     },
     {
       title: "Nibiaa Brings LoRaWAN Monitoring and Data Intelligence to Tea Estates",
@@ -935,20 +914,6 @@ window.SENSECAP_EDITORIAL = {
       image: "https://www.seeedstudio.com/blog/wp-content/uploads/2023/08/ac37bd6f-477f-47fa-8bc2-22968bc95cea.png",
       url: "https://www.seeed.cc/post/rice-pest-and-disease-monitoring-solution-to-ensure-a-bountiful-harvest",
       tag: "Crop Protection"
-    },
-    {
-      title: "SenseCAP LoRaWAN Empowers Precision Agriculture on an Outdoor Triticale Farm",
-      preview: "A distributed sensor network captures real-time field and microclimate conditions, helping growers understand crop requirements and make more informed agricultural management decisions.",
-      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2019/11/%E5%AE%9A%E5%B7%9E-1030x516.png",
-      url: "https://www.seeed.cc/post/sensecap-lorawan-deployed-in-outdoor-triticale-farm-empowering-precision-agriculture-in-dingzhou-hebei-province-northern-china",
-      tag: "Agriculture"
-    },
-    {
-      title: "Smart Tea Plantation Monitoring Enabled by SenseCAP LoRaWAN",
-      preview: "High-mountain tea farmers use real-time and historical environmental data to improve management efficiency while giving customers a transparent view of the plantation's growing conditions.",
-      image: "https://blog.seeedstudio.com/wp-content/uploads/2019/11/%E9%9B%85%E5%AE%89.png",
-      url: "https://www.seeedstudio.com/blog/2021/10/12/smart-tea-plantation-in-mengding-mountain-enabled-by-sensecap-lorawan-to-augment-resource-efficiency-and-customer-trust-for-sdgs/",
-      tag: "Agriculture"
     },
     {
       title: "Observing Real-Time Local Weather: Why You Should Have a Home Weather Station",
