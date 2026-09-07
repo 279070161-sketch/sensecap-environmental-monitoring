@@ -294,6 +294,11 @@ a { color: inherit; text-decoration: none; }
 .carousel-controls button[aria-disabled="true"],
 .carousel-controls button.ctrl-hidden { opacity: 0; pointer-events: none; }
 .editorial-track { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(320px, calc(25% - 18px)); gap: 24px; padding: 8px 4px 20px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-inline: contain; }
+.case-section .editorial-track { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-flow: row; overflow-x: visible; }
+.case-section .carousel-controls { display: none; }
+@media (max-width: 900px) {
+  .case-section .editorial-track { grid-template-columns: 1fr; }
+}
 .editorial-card { overflow: hidden; display: flex; flex-direction: column; height: 470px; min-height: 0; scroll-snap-align: start; background: white; border-radius: 16px; border: 1px solid rgba(9,65,96,.1); box-shadow: 0 8px 24px rgba(13,62,87,.05); transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
 .editorial-card:hover { transform: translateY(-5px); border-color: var(--seeed-green); box-shadow: 0 16px 36px rgba(141,194,31,.18); }
 .case-section .editorial-card { color: #0a2534; background: #ffffff; }
