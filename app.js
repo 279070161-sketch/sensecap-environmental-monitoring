@@ -872,18 +872,46 @@ window.SENSECAP_PRODUCTS = [
 window.SENSECAP_EDITORIAL = {
   cases: [
     {
+      title: "Smart Tea Plantation in Mengding Mountain Enabled by SenseCAP LoRaWAN",
+      preview: "SenseCAP LoRaWAN gateways and environmental sensors deployed on Mengding Mountain collect localized weather and soil metrics for tea cultivation, boosting efficiency and customer trust.",
+      image: "images/7.png",
+      url: "https://www.seeedstudio.com/blog/2021/10/12/smart-tea-plantation-in-mengding-mountain-enabled-by-sensecap-lorawan-to-augment-resource-efficiency-and-customer-trust-for-sdgs/",
+      tag: "Smart Agriculture"
+    },
+    {
+      title: "Purpose-Built for Greenhouses: SenseCAP 4G Monitoring for Smart Agriculture",
+      preview: "SenseCAP Combo 5-in-1 Sensor enables real-time 4G greenhouse environmental monitoring for strawberry growing, tracking temperature, humidity, light, and CO₂.",
+      image: "images/products/114993122.jpg",
+      url: "https://www.seeedstudio.com/blog/2026/09/07/sensecap-4g-greenhouse-monitoring/",
+      tag: "Smart Agriculture"
+    },
+    {
+      title: "500+ SenseCAP Devices Deployed to Mitigate Urban Heat Island in Cagliari",
+      preview: "Over 500 SenseCAP LoRaWAN devices across 300+ sites provide microclimate data for urban heat island assessment, academic research, and climate-responsive planning in Cagliari, Italy.",
+      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2023/04/SenseCAP-Devices-Deployed-on-Light-Pole.png",
+      url: "https://www.seeedstudio.com/blog/2023/04/25/smart-city-500-sensecap-lorawan-devices-deployed-to-mitigate-urban-heat-island-in-cagliari-italy/",
+      tag: "Smart City"
+    },
+    {
+      title: "SenseCAP ONE S1000 Weather Station & Smart Pole Applications in Smart Cities",
+      preview: "Integrating SenseCAP ONE S1000 compact weather stations into smart light poles to capture multi-parameter weather and air quality data for municipal smart city networks.",
+      image: "images/products/101991024.jpg",
+      url: "https://www.seeedstudio.com/blog/2021/06/17/sensecap-one-s1000-weather-station-and-smart-pole-applications-in-smart-city-scenarios/",
+      tag: "Smart City"
+    },
+    {
+      title: "Revolutionizing Agriculture in Puebla with Air Quality & Weather Monitoring",
+      preview: "An innovative smart farming project combining IoT sensor nodes and real-time environmental monitoring to optimize agricultural yield and climate resilience in Puebla.",
+      image: "images/products/100089706.jpg",
+      url: "https://www.hackster.io/angelfernandodls/revolutionizing-agriculture-in-puebla-53786c",
+      tag: "Smart Agriculture"
+    },
+    {
       title: "Rice Pest and Disease Monitoring for a More Predictable Harvest",
       preview: "SenseCAP weather stations, water sensors, a 4G Sensor Hub, and software monitoring combine meteorological and field data to support earlier rice pest warnings.",
       image: "https://www.seeedstudio.com/blog/wp-content/uploads/2023/08/ac37bd6f-477f-47fa-8bc2-22968bc95cea.png",
       url: "https://www.seeed.cc/post/rice-pest-and-disease-monitoring-solution-to-ensure-a-bountiful-harvest",
       tag: "Crop Protection"
-    },
-    {
-      title: "500+ SenseCAP Devices Help Cagliari Monitor the Urban Heat Island",
-      preview: "More than 500 SenseCAP devices across 300 sites provide local environmental data for urban planning, academic research, and targeted heat island mitigation actions.",
-      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2023/04/SenseCAP-Devices-Deployed-on-Light-Pole.png",
-      url: "https://www.seeed.cc/post/smart-city-500-sensecap-lorawan-devices-deployed-to-mitigate-urban-heat-island-in-cagliari-italy",
-      tag: "Smart City"
     },
     {
       title: "Nibiaa Brings LoRaWAN Monitoring and Data Intelligence to Tea Estates",
@@ -894,6 +922,62 @@ window.SENSECAP_EDITORIAL = {
     }
   ],
   blogs: [
+    {
+      title: "NDIR CO2 Sensor Explained: How Infrared Gas Sensing Works",
+      preview: "Explains how NDIR (Nondispersive Infrared) sensors determine carbon dioxide concentrations by measuring infrared light absorption at specific optical wavelengths.",
+      image: "images/products/101991028.jpg",
+      url: "https://www.seeedstudio.com/blog/2026/09/09/ndir-co2-sensor-how-it-works/",
+      tag: "Sensor Guide"
+    },
+    {
+      title: "Why Temperature Sensors Need Solar Radiation Shields for High Accuracy",
+      preview: "Discover why outdoor ambient temperature sensors require solar radiation louver shields to prevent direct sunlight thermal bias and maintain measurement precision.",
+      image: "images/products/114992222.png",
+      url: "https://www.seeedstudio.com/blog/2026/09/01/reasons-why-temperature-sensor-needs-a-solar-radiation-shield-to-ensure-accuracy/",
+      tag: "Sensor Guide"
+    },
+    {
+      title: "From Cup-and-Vane to Ultrasonic: Measuring Wind with Precision",
+      preview: "A comprehensive technical breakdown comparing traditional mechanical anemometers with solid-state ultrasonic wind sensors for maintenance-free wind tracking.",
+      image: "images/products/101991044.jpg",
+      url: "https://www.seeedstudio.com/blog/2026/08/18/from-cup-and-vane-to-ultrasonic-how-we-measure-wind-with-precision/",
+      tag: "Sensor Guide"
+    },
+    {
+      title: "Testing Long-Range Communication for SenseCAP LoRaWAN S210X Series",
+      preview: "Lab antenna radiation simulation and extensive real-world field trials verifying multi-kilometer communication range and data stability for S210X sensors.",
+      image: "images/products/114992872.jpg",
+      url: "https://www.seeedstudio.com/blog/2022/04/24/how-we-tested-the-long-range-communication-of-the-new-generation-of-sensecap-lorawan-s210x-series/",
+      tag: "Testing"
+    },
+    {
+      title: "How to Choose & Test Enclosure Materials for Industrial Sensor Probes",
+      preview: "An in-depth guide covering material selection, UV endurance, IP waterproof ratings, and mechanical strength testing for outdoor industrial environmental sensors.",
+      image: "images/products/101990667.png",
+      url: "https://www.seeedstudio.com/blog/2020/05/27/how-to-choose-and-test-the-enclosure-material-for-industrial-lora-sensor-probe/",
+      tag: "Testing"
+    },
+    {
+      title: "Testing Long-Range Wireless Range for SenseCAP LoRaWAN Products",
+      preview: "Field testing methodology and signal coverage validation for SenseCAP LoRaWAN industrial sensors across open countryside, dense urban blocks, and mountainous terrain.",
+      image: "images/products/101990962.jpg",
+      url: "https://www.seeedstudio.com/blog/2020/05/19/how-we-tested-the-long-range-communication-of-seeeds-industrial-iot-product-sensecap-lorawan-series/",
+      tag: "Testing"
+    },
+    {
+      title: "High & Low Temperature Reliability Testing of SenseCAP Industrial IoT",
+      preview: "Environmental test chamber procedures subjecting SenseCAP industrial IoT sensors to extreme temperature ranges from -40°C to +85°C to guarantee field reliability.",
+      image: "images/products/101991021.jpg",
+      url: "https://www.seeedstudio.com/blog/2020/04/24/high-low-temperature-testing-of-sensecap-industrial-iot-products/",
+      tag: "Testing"
+    },
+    {
+      title: "Performance & Accuracy Testing of SenseCAP ONE Weather Station",
+      preview: "Wind tunnel calibration, rain rate simulation, and environmental chamber testing procedures designed to validate high precision for SenseCAP ONE weather instruments.",
+      image: "images/products/101991024.jpg",
+      url: "https://www.seeedstudio.com/blog/2021/05/19/how-we-tested-the-performance-of-sensecap-one-weather-station/",
+      tag: "Weather Station"
+    },
     {
       title: "Solar Radiation Sensors: Thermopile vs. Photodiode",
       preview: "A practical comparison of thermopile and photodiode sensing technologies for solar radiation measurement, helping you choose the right sensor for weather stations and environmental monitoring.",
@@ -909,25 +993,11 @@ window.SENSECAP_EDITORIAL = {
       tag: "Weather Station"
     },
     {
-      title: "Rice Pest and Disease Monitoring for a More Predictable Harvest",
-      preview: "SenseCAP weather stations, water sensors, a 4G Sensor Hub, and software monitoring combine meteorological and field data to support earlier rice pest warnings.",
-      image: "https://www.seeedstudio.com/blog/wp-content/uploads/2023/08/ac37bd6f-477f-47fa-8bc2-22968bc95cea.png",
-      url: "https://www.seeed.cc/post/rice-pest-and-disease-monitoring-solution-to-ensure-a-bountiful-harvest",
-      tag: "Crop Protection"
-    },
-    {
       title: "Observing Real-Time Local Weather: Why You Should Have a Home Weather Station",
       preview: "Weather reports shape daily life and production, but distant stations can miss local conditions. A nearby weather station delivers data that reflects your actual site.",
       image: "https://www.seeedstudio.com/blog/wp-content/uploads/2022/09/45-font-1030x773.png",
       url: "https://www.seeedstudio.com/blog/2022/09/28/observing-the-real-time-local-weather-why-you-should-have-a-home-weather-station/",
       tag: "Field Guide"
-    },
-    {
-      title: "SenseCAP ONE S1000 Weather Station and Smart Pole Applications",
-      preview: "Reliable environmental data turns existing light poles into connected urban infrastructure for localized weather observation, air quality monitoring, planning, alerts, and better municipal services.",
-      image: "https://media-cdn.seeedstudio.com/media/catalog/product/cache/b2267b506d4e4594666ef83a79896a9a/1/0/101990693_front-05.png",
-      url: "https://www.seeedstudio.com/blog/2021/06/17/sensecap-one-s1000-weather-station-and-smart-pole-applications-in-smart-city-scenarios/",
-      tag: "Smart City"
     },
     {
       title: "A Brief Introduction to Seeed SenseCAP Industrial IoT Products",
